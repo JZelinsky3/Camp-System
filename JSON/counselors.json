@@ -1,0 +1,38 @@
+[
+    {
+        "id": "",
+        "firstName": "",
+        "lastName": "",
+        "userName": "",
+        "password": "",
+        "email": "",
+        "phone": "",
+        "birthday": "",
+        "address": "",
+        "campers": [
+            ""
+        ],
+        "description": "",
+        "cabins": [
+            ""
+        ]
+    },
+    {
+        "id": "",
+        "firstName": "",
+        "lastName": "",
+        "userName": "",
+        "password": "",
+        "email": "",
+        "phone": "",
+        "birthday": "",
+        "address": "",
+        "campers": [
+            ""
+        ],
+        "description": "",
+        "cabins": [
+            ""
+        ]
+    }
+]

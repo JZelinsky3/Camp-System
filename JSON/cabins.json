@@ -1,0 +1,73 @@
+[
+    {
+        "id": "",
+        "cabinAge": 10,
+        "MaxNumberOfCampers": 20,
+        "schedules": [
+            [
+                {
+                    "title": "",
+                    "location": "",
+                    "startTime": "",
+                    "endTime": "",
+                    "notes": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "title": "",
+                    "location": "",
+                    "startTime": "",
+                    "endTime": "",
+                    "notes": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            [
+                {
+                    "title": "",
+                    "location": "",
+                    "startTime": "",
+                    "endTime": "",
+                    "notes": [
+                        ""
+                    ]
+                },
+                {
+                    "title": "",
+                    "location": "",
+                    "startTime": "",
+                    "endTime": "",
+                    "notes": [
+                        ""
+                    ]
+                }
+            ]
+        ],
+        "Campers": [
+            ""
+        ]
+    },
+    {
+        "id": "",
+        "cabinAge": 12,
+        "MaxNumberOfCampers": 14,
+        "schedules": [
+                {
+                    "title": "",
+                    "location": "",
+                    "startTime": "",
+                    "endTime": "",
+                    "notes": [
+                        ""
+                    ]
+                }
+        ],
+        "Campers": [
+            ""
+        ]
+    }
+]

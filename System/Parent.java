@@ -1,3 +1,4 @@
+package System;
 public class Parent extends RegisteredUser {
     
     private ArrayList<Camper> children=new ArrayList<Camper>;

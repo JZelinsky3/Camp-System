@@ -1,0 +1,82 @@
+[
+    {
+        "id": "",
+        "firstName": "",
+        "lastName": "",
+        "birthday": "",
+        "emergencyContacts": [
+            {
+                "firstName": "",
+                "lastName": "",
+                "phoneNumber": "",
+                "address": ""
+            },
+            {
+                "firstName": "",
+                "lastName": "",
+                "phoneNumber": "",
+                "address": ""
+            }
+        ],
+        "guardians": [
+            {
+                "firstName": "",
+                "lastName": "",
+                "phoneNumber": "",
+                "address": ""
+            },
+            {
+                "firstName": "",
+                "lastName": "",
+                "phoneNumber": "",
+                "address": ""
+            }
+        ],
+        "physician": {
+            "firstName": "",
+            "lastName": "",
+            "phoneNumber": "",
+            "address": ""
+        },
+        "allergies": [
+            "",
+            ""
+        ],
+        "treatments": [
+            {
+                "name": "",
+                "details": "",
+                "quantity": "",
+                "sinceExposure": "",
+                "directions": ""
+            }
+        ],
+        "otherInfo": [
+            "",
+            ""
+        ]
+    },
+    
+    {
+        "id": "",
+        "firstName": "",
+        "lastName": "",
+        "birthday": "",
+        "emergencyContacts": [
+            ""
+        ],
+        "guardians": [
+            ""
+        ],
+        "physician": "",
+        "allergies": [
+            ""
+        ],
+        "treatments": [
+            ""
+        ],
+        "otherInfo": [
+            ""
+        ]
+    }
+]
