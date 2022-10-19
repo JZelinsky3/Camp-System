@@ -39,18 +39,6 @@ public class CampUI {
 				case(1):
 					login();
 					break;
-				case(2):
-					findItem();
-					break;
-				case(3):
-					checkoutItem();
-					break;
-				case(4):
-					rateItem();
-					break;
-				case(5):
-					payFine();
-					break;
 			}
 		}
 		
@@ -107,92 +95,6 @@ public class CampUI {
 		System.out.print(prompt + ": ");
 		return scanner.nextLine();
 	}
-	
-	private void findItem() {
-		System.out.println("\n-----Searching the Library-----");
-		String item = getUserItem();
-		
-		if(item == null)return;
-		
-		if(!camp.findItem(item)) {
-			System.out.println("Sorry we couldn't find your item\n");
-			return;
-		}
-		
-		System.out.println("YAY your item is in the library\n");		
-	}
-	
-	private void checkoutItem() {
-		System.out.println("\n-----Checking out an item-----");
-		String item = getUserItem();
-		
-		if(item == null)return;
-		
-		if(!camp.checkout(item)) {
-			System.out.println("Sorry we couldn't checkout your item\n");
-			return;
-		}
-		System.out.println("Your item was successfully checked out\n");
-	}
-	
-	private void rateItem() {
-		System.out.println("\n-----Searching the Library-----");
-		String item = getUserItem();
-		
-		if(item == null)return;
-		
-		//get rating
-		System.out.print("Enter rating: ");
-		int rating = Integer.parseInt(scanner.nextLine());
-		
-		if(rating < 0 || rating > 5) {
-			System.out.println("Not a valid rating\n");
-			return;
-		}
-		
-		if(!camp.rateItem(item, rating)) {
-			System.out.println("Sorry we couldn't rate your item\n");
-			return;
-		}
-		
-		System.out.println("Item was successfully rated\n");
-	}
-	
-	private void payFine() {
-		System.out.println("-----Paying a fine-----");
-		
-		//get amount
-		System.out.print("Enter amount: ");
-		int amount = Integer.parseInt(scanner.nextLine());
-		
-		if(amount < 0) {
-			System.out.println("Not a valid amount\n");
-			return;
-		}
-		
-		if(!camp.payFine(amount)) {
-			System.out.println("Sorry, you were not able to pay this fine.\n");
-			return;
-		}
-		
-		System.out.println("Fine paid\n");
-	}
-	
-	private String getUserItem() {
-		System.out.print("Enter Item Name: ");
-		
-		while(true) {
-			String itemName = scanner.nextLine().trim().toLowerCase();
-		
-			if(!itemName.contentEquals("")) return itemName;
-			
-			System.out.println("You need to actually enter content");
-			System.out.print("Would you like to enter item again (y) or return to main menu (n): ");
-			String command = scanner.nextLine().trim().toLowerCase();
-			if(command == "n") return null;
-		}
-	}
-	
 	
 	public static void main(String[] args) {
 		CampUI libraryInterface = new CampUI();

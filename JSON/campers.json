@@ -1,9 +1,9 @@
 [
     {
         "id": "",
-        "firstName": "",
-        "lastName": "",
-        "birthday": "",
+        "firstName": "Timmy",
+        "lastName": "Turner",
+        "birthday": "05/20/2010",
         "emergencyContacts": [
             {
                 "firstName": "",
