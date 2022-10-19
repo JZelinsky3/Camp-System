@@ -1,8 +1,8 @@
 [
     {
         "id": "",
-        "cabinAge": 10,
-        "MaxNumberOfCampers": 20,
+        "cabinAge": ,
+        "MaxNumberOfCampers": ,
         "schedules": [
             [
                 {
@@ -53,8 +53,8 @@
     },
     {
         "id": "",
-        "cabinAge": 12,
-        "MaxNumberOfCampers": 14,
+        "cabinAge": ,
+        "MaxNumberOfCampers": ,
         "schedules": [
                 {
                     "title": "",
