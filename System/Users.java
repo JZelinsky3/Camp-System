@@ -38,7 +38,7 @@ public class Users {
 	}
 	
 	public ArrayList<User> getUsers() {
-		return userList;
+		return userList; 
 	}
 	
 	public boolean addUser(String userName, String firstName, String lastName, int age, String phoneNumber) {
