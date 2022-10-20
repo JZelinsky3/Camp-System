@@ -1,7 +1,6 @@
 package System;
 import java.util.ArrayList;
 
-import Item;
 
 public class Database {
 	
@@ -9,7 +8,5 @@ public class Database {
 		return new ArrayList<User>();
 	}
 	
-	public static ArrayList<Item> getItems(){
-		return new ArrayList<Item>();
-	}
+	
 }
