@@ -3,7 +3,7 @@ package System;
 import java.util.ArrayList;
 
 public class ParentList {
-    private ArrayList<Parent> parents= new ArrayList<Parent>;
+    private ArrayList<Parent> parents= new ArrayList<Parent>();
 
     private ParentList parentList;
 
@@ -12,7 +12,7 @@ public class ParentList {
     }
 
     public ParentList getInstance(){
-
+        return parentList;
     }
 
     public void addParent(Parent parent){
