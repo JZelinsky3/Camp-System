@@ -16,6 +16,6 @@ public class Description {
     }
 
     public String toString(){
-        return "";
+        return "Name: "+firstName+" "+lastName+" Date of Birth: "+birthdate+" Gender: "+gender+" Hometown: "+hometown;
     }
 }
