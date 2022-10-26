@@ -10,16 +10,17 @@ public class CounselorList {
 
     private CounselorList counselorList;
 
-    private CounselorList(){
-
-    }
-
     public CounselorList getInstance(){
+        counselorList=new CounselorList();
+        counselorList.CounselorList();
         return counselorList;
     }
 
-    public void addCounselor(Counselor counselor){
+    private void CounselorList() {
+    }
 
+    public void addCounselor(Counselor counselor){
+        counselors.add(counselor);
     }
 
     public Counselor getCounselor(Counselor counselor){
