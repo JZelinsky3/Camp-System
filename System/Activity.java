@@ -6,7 +6,7 @@ public class Activity {
     private String location;
     private String startTime;
     private String endTime;
-    private ArrayList<String> notes;
+    private ArrayList<String> notes = new ArrayList<String>();
 
     public Activity(String title, String location){
         this.title = title;
