@@ -24,7 +24,7 @@ public class CounselorList {
     }
 
     public Counselor getCounselor(Counselor counselor){
-        return counselor;
+        return counselors.get(counselors.indexOf(counselor));
     }
 
     public void editCounselor(Counselor counselor){

@@ -18,7 +18,7 @@ public class Treatment {
 
     }
     public String toString(){
-        return " ";
+        return "Details: "+this.details+" Quantity: "+this.quantity+" Since Exposure: "+this.sinceExposure+" Directions: "+this.directions;
     }
 
 

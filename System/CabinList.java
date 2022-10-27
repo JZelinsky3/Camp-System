@@ -8,20 +8,20 @@ public class CabinList {
 
     private CabinList cabinList;
 
-    private CounselorList(){
+    private CabinList(){
         
     }
 
-    public CounselorList getInstance(){
-        
+    public CabinList getInstance(){
+        return null;
     }
 
     public void addCabin(Cabin cabin){
-
+        cabins.add(cabin);
     }
 
     public Cabin getCabin(Cabin cabin){
-        return cabin;
+        return cabins.get(cabins.indexOf(cabin));
     }
 
     public void editCabin(Cabin cabin){

@@ -13,4 +13,8 @@ public class Physician {
         this.phoneNum=phoneNum;
         this.address=address;
     }
+
+    public String toString(){
+        return "Name: "+this.firstName+" "+this.lastName+" Phone Number: "+this.phoneNum+" Address: "+this.address;
+    }
 }
