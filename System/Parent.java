@@ -1,7 +1,10 @@
 package System;
-public class Parent extends RegisteredUser {
+
+import java.util.ArrayList;
+
+public class Parent {
     
-    private ArrayList<Camper> children=new ArrayList<Camper>;
+    private ArrayList<Camper> children=new ArrayList<Camper>();
     private String firstName;
     private String lastName;
     private String username;

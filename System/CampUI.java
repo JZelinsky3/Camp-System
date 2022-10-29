@@ -159,6 +159,7 @@ public class CampUI {
                 System.out.print("\nDo you want to add another allergy? Y/N");
                 yn = scanner.nextLine();
             }
+        }
 
     }
 

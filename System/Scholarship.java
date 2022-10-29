@@ -1,6 +1,6 @@
 package System;
 
-public enum Scholarships {
+public enum Scholarship {
     MERIT,
     ACADEMIC,
     NEED_BASED;

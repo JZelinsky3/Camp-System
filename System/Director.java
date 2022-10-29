@@ -7,13 +7,13 @@ public class Director {
     
     private ArrayList<Schedule> schedule=new ArrayList<Schedule>();
 
-    private ArrayList<Price> pricing=new ArrayList<Price>;
+    private ArrayList<Price> pricing=new ArrayList<Price>();
 
     private ArrayList<Capacity> availability=new ArrayList<Capacity>();
 
     private ArrayList<Expelled> expulsion=new ArrayList<Expelled>();
 
-    private ArrayList<Scholarship> scholarships=new ArrayList<Scholarship>;
+    private ArrayList<Scholarship> scholarships=new ArrayList<Scholarship>();
 
     public void addCamperSchedule(Schedule schedule){
 
@@ -35,7 +35,7 @@ public class Director {
 
     }
 
-    public void addScholarships(Scholarships scholarships){
+    public void addScholarships(Scholarship scholarships){
         
     }
 }

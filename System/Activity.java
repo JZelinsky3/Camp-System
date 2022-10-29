@@ -11,24 +11,24 @@ public class Activity {
     public Activity(String title, String location){
         this.title = title;
         this.location = location;
-    }
-    public void addStartTime(String startTime) {
-    }
-    
-    public void addEndTime(String endTime) {   
+        this.startTime = startTime;
+        this.endTime = endTime;
     }
     
-    public void addNotes(ArrayList<String> note) {
+    public void addNotes(String note) {
+        notes.add(note);
     }
     
-    public void removeNotes(String notes){
+    public void removeNotes(String note){
+        notes.remove(note);
     }
     
     public String viewTime(){
-        return " ";
+        return this.startTime+"-"+this.endTime;
     }
     
     public void changeTime(String time){
+        
     }
     
     public int calculateDuration(){
@@ -36,7 +36,7 @@ public class Activity {
     }
     
     public String toString(){
-        return " ";
+        return "Title: "+this.title+" Locations: "+this.location+" Start Time: "+this.startTime+" End Time: "+this.endTime;
     }
     
 }

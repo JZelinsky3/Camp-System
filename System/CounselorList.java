@@ -28,7 +28,7 @@ public class CounselorList {
     }
 
     public void editCounselor(Counselor counselor){
-
+        
     }
 
     public void saveCounselor(Counselor counselor){
