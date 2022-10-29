@@ -1,4 +1,25 @@
 [
+        {
+            "id": "",
+            "startDate": "",
+            "endDate": "",
+            "ageGroup": 8,
+            "availableSpots": 18,
+            "cabins": [
+                ""
+            ]
+        },
+        {
+            "id": "",
+            "startDate": "",
+            "endDate": "",
+            "ageGroup": 12,
+            "availableSpots": 2,
+            "cabins": [
+                ""
+            ]
+        }
+
     {
         "id": "",
         "cabinAge": 10,
