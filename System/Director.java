@@ -13,7 +13,11 @@ public class Director {
 
     private ArrayList<Expelled> expulsion=new ArrayList<Expelled>();
 
+<<<<<<< HEAD
     private ArrayList<Scholarships> scholarships=new ArrayList<Scholarships>();
+=======
+    private ArrayList<Scholarship> scholarships=new ArrayList<Scholarship>();
+>>>>>>> edf40814e97daf1cf2c3888310f54499101243b3
 
     public void addCamperSchedule(Schedule schedule){
 
@@ -35,7 +39,7 @@ public class Director {
 
     }
 
-    public void addScholarships(Scholarships scholarships){
+    public void addScholarships(Scholarship scholarships){
         
     }
 }

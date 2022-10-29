@@ -15,11 +15,11 @@ public class CamperList {
     }
 
     public void addCamper(Camper camper){
-
+        campers.add(camper);
     }
 
     public Camper getCamper(Camper camper){
-        return camper;
+        return campers.get(campers.indexOf(camper));
     }
 
     public void editCamper(Camper camper){

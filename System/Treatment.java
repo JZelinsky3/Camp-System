@@ -20,7 +20,7 @@ public class Treatment {
     public Treatment(String treatName, String treatTime) {
     }
     public String toString(){
-        return " ";
+        return "Details: "+this.details+" Quantity: "+this.quantity+" Since Exposure: "+this.sinceExposure+" Directions: "+this.directions;
     }
 
 

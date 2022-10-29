@@ -1,9 +1,11 @@
 package System;
 
+import java.util.ArrayList;
+
 public class Counselor extends User{
     private String description;
-    private ArrayList<Cabin> cabins;
-    private ArrayList<Schedule> schedule = new ArrayList<Schedule>;
+    private ArrayList<Cabin> cabins = new ArrayList<Cabin>();
+    private ArrayList<Schedule> schedule = new ArrayList<Schedule>();
 
     public Counselor(String firstName, String lastName, String userName) {
         super(firstName, lastName, userName);
