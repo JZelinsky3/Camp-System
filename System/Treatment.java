@@ -17,6 +17,8 @@ public class Treatment {
         this.directions = directions;
 
     }
+    public Treatment(String treatName, String treatTime) {
+    }
     public String toString(){
         return " ";
     }
