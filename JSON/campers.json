@@ -1,82 +1,125 @@
 [
     {
-        "id": "",
-        "firstName": "Timmy",
-        "lastName": "Turner",
-        "birthday": "05/20/2010",
+        "id": "942f97dc-fac3-48ea-8dad-3360908698fd",
+        "firstName": "Tina",
+        "lastName": "Kelly",
+        "birthday": "2006-08-22",
         "emergencyContacts": [
             {
-                "firstName": "",
-                "lastName": "",
-                "phoneNumber": "",
+                "firstName": "Carter",
+                "lastName": "Hart",
+                "phoneNumber": "218-888-5421",
                 "address": ""
             },
             {
-                "firstName": "",
-                "lastName": "",
-                "phoneNumber": "",
+                "firstName": "Tom",
+                "lastName": "Jones",
+                "phoneNumber": "887-927-4551",
                 "address": ""
             }
         ],
         "guardians": [
             {
-                "firstName": "",
-                "lastName": "",
-                "phoneNumber": "",
+                "firstName": "Jessica",
+                "lastName": "Taylor",
+                "phoneNumber": "233-583-6734",
                 "address": ""
             },
             {
-                "firstName": "",
-                "lastName": "",
-                "phoneNumber": "",
+                "firstName": "Roger",
+                "lastName": "Rich",
+                "phoneNumber": "703-122-4458",
                 "address": ""
             }
         ],
-        "physician": {
-            "firstName": "",
-            "lastName": "",
-            "phoneNumber": "",
-            "address": ""
+        "medical": {
+            "physician": {
+                "firstName": "Ashley",
+                "lastName": "Richards",
+                "phoneNumber": "514-875-2291",
+                "address": ""
+            },
+            "allergies": [
+                "Dogs that shed",
+                "House dust mites"
+            ],
+            "treatments": [
+                {
+                    "description": "Takes one OCD tablet mixed in with breakfasts",
+                    "time": "Before breakfast"
+                }
+            ]
         },
-        "allergies": [
-            "",
-            ""
+        "notes": [
+            "Needs to take medication with breakfast",
+            "Is a bit afraid of water"
         ],
-        "treatments": [
-            {
-                "name": "",
-                "details": "",
-                "quantity": "",
-                "sinceExposure": "",
-                "directions": ""
-            }
-        ],
-        "otherInfo": [
-            "",
+        "sessions": [
             ""
         ]
     },
-    
     {
         "id": "",
-        "firstName": "",
-        "lastName": "",
-        "birthday": "",
+        "firstName": "Ben",
+        "lastName": "Lee",
+        "birthday": "2009-08-15",
         "emergencyContacts": [
-            ""
+            {
+                "firstName": "Carter",
+                "lastName": "Hart",
+                "phoneNumber": "218-888-5421",
+                "address": ""
+            },
+            {
+                "firstName": "Tom",
+                "lastName": "Jones",
+                "phoneNumber": "887-927-4551",
+                "address": ""
+            }
         ],
         "guardians": [
-            ""
+            {
+                "firstName": "Jessica",
+                "lastName": "Taylor",
+                "phoneNumber": "233-583-6734",
+                "address": ""
+            },
+            {
+                "firstName": "Roger",
+                "lastName": "Rich",
+                "phoneNumber": "703-122-4458",
+                "address": ""
+            }
         ],
-        "physician": "",
-        "allergies": [
-            ""
+        "medical": {
+            "doctor": {
+                "firstName": "Kasey",
+                "lastName": "Frederick",
+                "phoneNumber": "773-234-3329",
+                "address": "2706 W Flournoy St, Chicago, IL 60612"
+            },
+            "allergies": [
+                "Dogs that shed",
+                "House dust mites"
+            ],
+            "medications": [
+                {
+                    "description": "Takes one OCD tablet mixed in with breakfasts",
+                    "time": "Before breakfast"
+                }
+            ]
+        },
+        "numberStrikes": 2,
+        "reasonStrikes": [
+            "Hitting another camper",
+            "Starting a food fight"
         ],
-        "treatments": [
-            ""
+        "notes": [
+            "Needs to take medication with breakfast",
+            "Is a bit afraid of water"
         ],
-        "otherInfo": [
-            ""
+        "sessions": [
+            "ae03bbb0-0bef-415b-a0fd-2d440dd1fa92"
         ]
     }
 ]

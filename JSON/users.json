@@ -1,30 +1,43 @@
 [
     {
-        "id": "",
-        "firstName": "",
-        "lastName": "",
-        "userName": "",
-        "password": "",
-        "email": "",
-        "phoneNumber": "",
-        "birthday": "",
+        "birthday": "1988-05-05",
+        "firstName": "Rachel",
+        "lastName": "Barret",
+        "password": "RachB445",
+        "phoneNumber": "771-912-4521",
         "address": "",
         "campers": [
             ""
-        ]
+        ],
+        "id": "",
+        "userName": "rachelBrocks12",
+        "type": "PARENT",
+        "email": "barretrach123@icloud.com"
     },
     {
-        "id": "",
-        "firstName": "",
-        "lastName": "",
-        "userName": "",
-        "password": "",
-        "email": "",
-        "phoneNumber": "",
-        "birthday": "",
+        "birthday": "1985-10-02",
+        "firstName": "Pedro",
+        "lastName": "Johnson",
+        "password": "pJohn432",
+        "phoneNumber": "467-591-4376",
         "address": "",
-        "campers": [
-            " "
-        ]
+        "campers": [],
+        "id": "",
+        "userName": "PJohnson1",
+        "type": "PARENT",
+        "email": "pjohnson1@gmail.com"
+    },
+    {
+        "birthday": "1980-01-25",
+        "firstName": "Mike",
+        "lastName": "Jones",
+        "password": null,
+        "phoneNumber": "281-330-8004",
+        "address": "",
+        "campers": [],
+        "id": "",
+        "userName": null,
+        "type": "DIRECTOR",
+        "email": "mikejones@gmail.com"
     }
 ]

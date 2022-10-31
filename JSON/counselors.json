@@ -1,36 +1,68 @@
 [
     {
         "id": "",
-        "firstName": "",
-        "lastName": "",
-        "userName": "",
-        "password": "",
-        "email": "",
-        "phone": "",
-        "birthday": "",
+        "firstName": "Tim",
+        "lastName": "White",
+        "userName": "timw123",
+        "password": "irock999",
+        "email": "whitetime12@gmail.com",
+        "phone": "445-887-9963",
+        "birthday": "1995-11-16",
         "address": "",
-        "campers": [
-            ""
-        ],
-        "description": "",
+        "type": "COUNSELOR",
+        "campers": [],
+        "bio": "Jacob is a very friedly, open and outdoor-type guy who loves working with kids and organizing camps.",
+        "medical": {
+            "physician": {
+                "firstName": "Ashley",
+                "lastName": "Richards",
+                "phoneNumber": "514-875-2291",
+                "address": ""
+            },
+            "allergies": [
+                "NA"
+            ],
+            "treatments": [
+                {
+                    "description": "NA",
+                    "time": "NA"
+                }
+            ]
+        },
         "cabins": [
             ""
         ]
     },
     {
         "id": "",
-        "firstName": "",
-        "lastName": "",
-        "userName": "",
-        "password": "",
-        "email": "",
-        "phone": "",
-        "birthday": "",
+        "firstName": "John",
+        "lastName": "Shelby",
+        "userName": "john12shelby",
+        "password": "shelbyworld55",
+        "email": "johns5@outlook.com",
+        "phone": "215-870-5655",
+        "birthday": "1998-04-24",
         "address": "",
-        "campers": [
-            ""
-        ],
-        "description": "",
+        "type": "COUNSELOR",
+        "campers": [],
+        "biography": "Reilly is excited to be a counselor as this is his first time.",
+        "medical": {
+            "physician": {
+                "firstName": "Booter",
+                "lastName": "Lang",
+                "phoneNumber": "843-551-7543",
+                "address": ""
+            },
+            "allergies": [
+                "NA"
+            ],
+            "medications": [
+                {
+                    "description": "NA",
+                    "time": "NA"
+                }
+            ]
+        },
         "cabins": [
             ""
         ]
