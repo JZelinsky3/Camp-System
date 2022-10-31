@@ -1,14 +1,23 @@
-package System;
 import java.util.ArrayList;
 
 public class Schedule {
-    private ArrayList<Activity> activities;
 
-    public Schedule(){}
+    private Cabin cabin;    
+    private ArrayList<Activity> activities; 
+    private int breakfast;  
+    private int lunch;    
+    private int dinner;   
 
-    public void addActivity(){}
-    public void removeActivity(){}
-    public String toString(){
-        return "this is a schedule";
+    public Schedule(Cabin cabin, ArrayList<Activity> activities, int breakfast, int lunch, int dinner) {    
+        this.cabin = cabin; 
+        this.activities = activities; 
+        this.breakfast = breakfast;   
+        this.lunch = lunch;   
+        this.dinner = dinner; 
+    }
+
+    public void editSchedule(ArrayList<String> activities) {
+        
     }
 }
+

@@ -1,33 +1,31 @@
-package System;
-
-import java.util.ArrayList;
-
 public class ParentList {
-    private ArrayList<Parent> parents= new ArrayList<Parent>();
+    private static ParentList parentList;
+    private static ParentRecord parentRecord;
 
-    private ParentList parentList;
-
-    private void ParentRecord(){
-        
+    private ParentRecord() {
+        parentList = new ParentList();
     }
 
-    public ParentList getInstance(){
-        return parentList;
+    public static ParentRecord getInstance() {
+        if (parentRecord == null) {
+            parentRecord = new ParentRecord();
+        }
+        return parentRecord;
     }
 
-    public void addParent(Parent parent){
-
+    public void addParent(Parent parent) {
+        parentList.addParent(parent);
     }
 
-    public Parent getParent(Parent parent){
-        return parent;
+    public Parent getParent(Parent parent) {
+        return parentList.getParent(parent);
     }
 
-    public void editParent(Parent parent){
-
+    public void editParent(Parent parent) {
+        parentList.editParent(parent);
     }
 
-    public void saveParent(Parent parent){
-        
+    public void saveParent(Parent parent) {
+        parentList.saveParent(parent);
     }
 }
