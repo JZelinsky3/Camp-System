@@ -21,14 +21,26 @@ public class DataReader extends DataConstants {
     private static ArrayList<Session> sessions;
     private static ArrayList<Camper> campers;
 
+    public static void main(String[] args) {
+        ArrayList<Session> us = getAllSessions();;
+        for (Session user : us) {
+            System.out.println(user);
+            System.out.println(user.getTheme());
+        }
+    }
+
+    /**
+     * Returns users
+     * @return ArrayList<User>
+     */
     public static ArrayList<User> getAllUsers() {
         users = new ArrayList<>();
 
         try {
-            FileReader reader = new FileReader(USERS_FILE_NAME);
-            JSONParser parser = new JSONParser(); // make a JSON parser
+            FileReader userReader = new FileReader(USERS_FILE_NAME);
+            JSONParser parser = new JSONParser();
 			
-            JSONArray userJSON = (JSONArray) new JSONParser().parse(reader);
+            JSONArray userJSON = (JSONArray) new JSONParser().parse(userReader);
 
             for (int i=0; i<userJSON.size(); i++) {
                 JSONObject user = (JSONObject) userJSON.get(i);
@@ -47,7 +59,6 @@ public class DataReader extends DataConstants {
     }
 
     public static ArrayList<Counselor> getAllCounselors() {
-        // initiailize the counselors arraylist
         counselors = new ArrayList<>();
         
         try {
@@ -58,19 +69,15 @@ public class DataReader extends DataConstants {
             for (int i=0; i<counselorJSON.size(); i++) {
                 JSONObject counselor = (JSONObject) counselorJSON.get(i);
 
-                // create the counselor
-                // Counselor extends User, so many attributes are common
                 Counselor newCounselor = null;
                 newCounselor = (Counselor) getUser(counselor, newCounselor);
                 
-                newCounselor.addDescription((String) counselor.get(DESCRIPTION));
+                newCounselor.addBio((String) counselor.get(BIO));
                 newCounselor.addMedical(getMedical(
                     (JSONObject) counselor.get(MEDICAL)));
 
-                // add the cabins to the counselor
                 newCounselor.addCabins(getSomeCabins(counselor));
-                
-                // add this new Counselor to the Counselor ArrayList
+
                 counselors.add(newCounselor);
             }    
         } catch (Exception e) {
@@ -95,7 +102,6 @@ public class DataReader extends DataConstants {
         return cabins;
     }
 
- 
     private static void initiate() {
         if (users == null || counselors == null) {
             getAllUsers();
@@ -104,6 +110,7 @@ public class DataReader extends DataConstants {
     }
 
     private static ArrayList<Camper> getCampers() {
+        
         campers = new ArrayList<>();
         
         try {
@@ -130,21 +137,16 @@ public class DataReader extends DataConstants {
                 newCamper.addGuardians(newGuardians);
 
                 JSONObject medical = (JSONObject) camper.get(MEDICAL);
-                newCamper.addMedical(getMedical(medical));  
+                newCamper.addMedical(getMedical(medical));    
 
-                // add the sessions later...
-
-                // add the Camper to the Camper Array
                 campers.add(newCamper);
             }
             
-            // first initialize the sessions arrayList
             getSessions();
 
             for (int i=0; i<camperJSON.size(); i++) {
 
                 JSONObject camper = (JSONObject) camperJSON.get(i);
-
                 JSONArray JSONSessions = (JSONArray) camper.get(SESSIONS);
                 
                 ArrayList<Session> newSessions = new ArrayList<>();
@@ -152,12 +154,9 @@ public class DataReader extends DataConstants {
                     
                     Session newSession = getSessionByUUID(
                         UUID.fromString((String) JSONSessions.get(j)));
-                        
+
                     if (newSession != null)
                         newSessions.add(newSession);
-
-                    // TODO else session is in campers but not in sessions?
-                }
 
                 campers.get(i).addSessions(newSessions);
             }
@@ -181,17 +180,14 @@ public class DataReader extends DataConstants {
             for (int i=0; i<sessionsJSON.size(); i++) {
                 JSONObject session = (JSONObject) sessionsJSON.get(i);
 
-                // create the session
                 Session newSession = new Session(
                     UUID.fromString((String) session.get(USER_ID)),
                     LocalDate.parse((String) session.get(START_DATE)),
-                    LocalDate.parse((String) session.get(END_DATE)),
-                    ((Long) session.get(AGE_GROUP)).intValue());
+                    LocalDate.parse((String) session.get(END_DATE)));
 
                 newSession.setAvailableSpots(
-                    ((Long) session.get(AVAILABLE_SPOTS)).intValue());
+                    ((Long) session.get(SPOTS_LEFT)).intValue());
                 
-                // get the themes...
                 newSession.addTheme((String) session.get(THEME));
 
                 newSession.addCabins(getSomeCabins(session));
@@ -220,8 +216,7 @@ public class DataReader extends DataConstants {
 
                 Cabin newCabin = new Cabin(
                     UUID.fromString((String) cabin.get(USER_ID)), 
-                    ((Long) cabin.get(CABIN_AGE)).intValue(),
-                    ((Long) cabin.get(SESSION_DURATION)).intValue());
+                    ((Long) cabin.get(CABIN_AGE)).intValue());
 
                 newCabin.addMaxCampers( ((Long) cabin.get(MAX_NO_OF_CAMPERS)).intValue() );
 
@@ -280,13 +275,12 @@ public class DataReader extends DataConstants {
         for (int i=0; i<JSONcampers.size(); i++) {
 
             UUID camperID = UUID.fromString((String) JSONcampers.get(i));
-
+            
             Camper newCamper = getCamperByUUID(camperID);
 
             if (newCamper != null)
                 newCampers.add(newCamper);
             
-            // TODO else Camper is in the object but not in campers?
         }
 
         return newCampers;
@@ -295,20 +289,19 @@ public class DataReader extends DataConstants {
     private static ArrayList<Cabin> getSomeCabins(JSONObject someObject) {
         if (cabins == null)
             getCabins();
-                            
+                          
         JSONArray JSONcabins = (JSONArray) someObject.get(CABINS);
         ArrayList<Cabin> newCabins = new ArrayList<>();
 
         for (int i=0; i<JSONcabins.size(); i++) {
 
             UUID cabinID = UUID.fromString((String) JSONcabins.get(i));
-
+            
             Cabin newCabin = getCabinByUUID(cabinID);
 
             if (newCabin != null)
                 newCabins.add(newCabin);
             
-            // TODO else cabin is in the object but not in cabins?
         }
 
         return newCabins;
@@ -380,11 +373,9 @@ public class DataReader extends DataConstants {
         counselor.setPassword( (String) userObj.get(PASSWORD) );
         counselor.addEmail( (String) userObj.get(EMAIL) );
         counselor.addPhoneNumber( (String) userObj.get(PHONE_NUMBER) );
-        counselor.addPreferredContact( (String) userObj.get(PREFFERED_CONTACT) );
         counselor.addBirthday( LocalDate.parse((String) userObj.get(BIRTHDAY)) );
         counselor.addAddress( (String) userObj.get(ADDRESS) );
        
-        // get the type
         String type = (String) userObj.get(TYPE);
         Type newType = Type.valueOf(type);
         counselor.setType(newType);
@@ -418,12 +409,10 @@ public class DataReader extends DataConstants {
         JSONArray treatments = (JSONArray) medical.get(TREATMENTS);
         
         for (int i=0; i<treatments.size(); i++) {
-            // the array contains Medication objects
             JSONObject treatment = (JSONObject) treatments.get(i);
 
-            // get the medication info and add to the arraylist
             newTreatments.add( new Treatment(
-                (String) treatment.get(DESCRIPTION),
+                (String) treatment.get(DETAILS),
                 (String) treatment.get(TIME) ));
         }
         
@@ -465,6 +454,7 @@ public class DataReader extends DataConstants {
             newActivity.addStartTime( (String) activity.get(START_TIME) );
             newActivity.addEndTime( (String) activity.get(END_TIME) );
             
+            // get the ArrayList of notes
             ArrayList<String> newNotes = new ArrayList<>();
             JSONArray notes = (JSONArray) activity.get(NOTES);
             for (int j=0; j<notes.size(); j++)
