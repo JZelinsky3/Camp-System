@@ -1,93 +1,119 @@
 [
-        {
-            "id": "",
-            "startDate": "",
-            "endDate": "",
-            "ageGroup": 8,
-            "availableSpots": 18,
-            "cabins": [
-                ""
-            ]
-        },
-        {
-            "id": "",
-            "startDate": "",
-            "endDate": "",
-            "ageGroup": 12,
-            "availableSpots": 2,
-            "cabins": [
-                ""
-            ]
-        }
-
     {
         "id": "",
-        "cabinAge": 10,
-        "MaxNumberOfCampers": 15,
-        "schedules": [
-            [
-                {
-                    "title": "",
-                    "location": "",
-                    "startTime": "",
-                    "endTime": "",
-                    "notes": [
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "title": "",
-                    "location": "",
-                    "startTime": "",
-                    "endTime": "",
-                    "notes": [
-                        "",
-                        ""
-                    ]
-                }
-            ],
-            [
-                {
-                    "title": "",
-                    "location": "",
-                    "startTime": "",
-                    "endTime": "",
-                    "notes": [
-                        ""
-                    ]
-                },
-                {
-                    "title": "",
-                    "location": "",
-                    "startTime": "",
-                    "endTime": "",
-                    "notes": [
-                        ""
-                    ]
-                }
-            ]
-        ],
-        "Campers": [
+        "startDate": "2022-07-12",
+        "endDate": "2022-07-19",
+        "availableSpots": 20,
+        "theme": "outdoors week",
+        "cabins": [
             ""
         ]
     },
     {
         "id": "",
-        "cabinAge": 14,
-        "MaxNumberOfCampers": 15,
-        "schedules": [
+        "startDate": "2022-07-20",
+        "endDate": "2022-07-27",
+        "availableSpots": 2,
+        "theme": "water week",
+        "cabins": [
+            ""
+        ]
+    },
+    {
+        "id": "",
+        "cabinAge": 17,
+        "cabinCapacity": 20,
+        "schedules": {
+            "MONDAY": [
+                {
+                    "title": "dodgeball",
+                    "location": "backyard",
+                    "startTime": "1400",
+                    "endTime": "1500"
+                },
+                {
+                    "title": "lazy river",
+                    "location": "river",
+                    "startTime": "1200",
+                    "endTime": "1500"
+                }
+            ],
+            "TUESDAY": [
+                {
+                    "title": "hiking",
+                    "location": "park",
+                    "startTime": "1100",
+                    "endTime": "1330"
+                },
+                {
+                    "title": "cliff jumping",
+                    "location": "lake",
+                    "startTime": "1000",
+                    "endTime": "1230"
+                }
+            ],
+            "WEDNESDAY": [
+                {
+                    "title": "horseback riding",
+                    "location": "park",
+                    "startTime": "1130",
+                    "endTime": "1230"
+                },
                 {
                     "title": "",
-                    "location": "",
-                    "startTime": "",
-                    "endTime": "",
-                    "notes": [
-                        ""
-                    ]
+                    "location": "water balloon fight",
+                    "startTime": "1500",
+                    "endTime": "1630"
                 }
-        ],
-        "Campers": [
+            ],
+            "THURSDAY": [
+                {
+                    "title": "",
+                    "location": "river",
+                    "startTime": "1500",
+                    "endTime": "1600"
+                },
+                {
+                    "title": "lake fun",
+                    "location": "lake",
+                    "startTime": "1100",
+                    "endTime": "1430"
+                }
+            ],
+            "FRIDAY": [
+                {
+                    "title": "disc golf",
+                    "location": "backyard",
+                    "startTime": "1500",
+                    "endTime": "1600"
+                },
+                {
+                    "title": "kayaking",
+                    "location": "lake",
+                    "startTime": "1100",
+                    "endTime": "1230"
+                }
+            ]
+        },
+        "campers": [
+            ""
+        ]
+    },
+    {
+        "id": "",
+        "cabinAge": 12,
+        "maxNumberOfCampers": 20,
+        "schedules": {
+            "THURSDAY": [
+                {
+                    "title": "corn hole",
+                    "location": "backyard",
+                    "startTime": "1800",
+                    "endTime": "1930"
+                }
+            ]
+        },
+        "campers": [
             ""
         ]
     }
