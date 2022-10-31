@@ -40,20 +40,15 @@
                 "address": ""
             },
             "allergies": [
-                "Dogs that shed",
-                "House dust mites"
+                "NA"
             ],
             "treatments": [
                 {
-                    "description": "Takes one OCD tablet mixed in with breakfasts",
-                    "time": "Before breakfast"
+                    "description": "NA",
+                    "time": "NA"
                 }
             ]
         },
-        "notes": [
-            "Needs to take medication with breakfast",
-            "Is a bit afraid of water"
-        ],
         "sessions": [
             ""
         ]
@@ -92,34 +87,29 @@
             }
         ],
         "medical": {
-            "doctor": {
-                "firstName": "Kasey",
-                "lastName": "Frederick",
-                "phoneNumber": "773-234-3329",
-                "address": "2706 W Flournoy St, Chicago, IL 60612"
+            "physician": {
+                "firstName": "Booter",
+                "lastName": "Lang",
+                "phoneNumber": "843-551-7543",
+                "address": ""
             },
             "allergies": [
-                "Dogs that shed",
-                "House dust mites"
+                "",
+                ""
             ],
             "medications": [
                 {
-                    "description": "Takes one OCD tablet mixed in with breakfasts",
-                    "time": "Before breakfast"
+                    "description": "",
+                    "time": ""
                 }
             ]
         },
-        "numberStrikes": 2,
-        "reasonStrikes": [
-            "Hitting another camper",
-            "Starting a food fight"
-        ],
         "notes": [
-            "Needs to take medication with breakfast",
-            "Is a bit afraid of water"
+            "",
+            ""
         ],
         "sessions": [
-            "ae03bbb0-0bef-415b-a0fd-2d440dd1fa92"
+            ""
         ]
     }
 ]
