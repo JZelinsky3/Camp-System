@@ -1,5 +1,7 @@
 package System;
-
+/**
+ * Stores information on a medical professional that may need to be contacted incase something happens to a user
+ */
 public class Physician {
     
     private String firstName;

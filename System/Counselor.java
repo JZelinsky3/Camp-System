@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Counselor extends Staff {
+public class Counselor {
     private ArrayList<Schedule> schedule;
-    public Counselor(String birthdate, Bio bio, Medicallnfo medicallnfo, ArrayList<Integer> cabinNum) {
-        super(birthdate, bio, medicallnfo);
+    public Counselor(String birthdate, Bio bio, Medical medicallnfo, ArrayList<Integer> cabinNum) {
+        super();
         this.cabinNum = cabinNum;
     }
     public void addCamperSchedule(Schedule schedule) {

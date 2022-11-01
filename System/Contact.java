@@ -1,5 +1,7 @@
 package System;
-
+/**
+ * Contact information for a user
+ */
 public class Contact {
     //private UUID id;
     private String firstName;

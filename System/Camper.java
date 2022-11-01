@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 import java.util.UUID;
-
+/**
+ * An objects storing a camper's information
+ */
 public class Camper
 {
     private UUID id;
     private String birthdate;
     private ArrayList<Address> address;
     private ArrayList<Gender> gender;
-    private MedicalInfo medicalInfo;
+    private Medical medicalInfo;
 
     public Camper(String birthdate, String firstName, String lastName, String username, String password, String email, MedicalInfo medicalInfo)
     {
@@ -38,7 +40,7 @@ public class Camper
         return this.gender;
     }
 
-    public MedicalInfo getMedicalInfo()
+    public Medical getMedicalInfo()
     {
         return this.medicalInfo;
     }
@@ -58,7 +60,7 @@ public class Camper
         this.gender = gender;
     }
 
-    public void setMedicalInfo(MedicalInfo medicalInfo)
+    public void setMedicalInfo(Medical medicalInfo)
     {
         this.medicalInfo = medicalInfo;
     }

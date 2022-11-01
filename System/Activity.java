@@ -2,6 +2,9 @@ package System;
 import java.time.Duration;
 import java.util.ArrayList;
 
+/**
+ * The name, time, and location of an activity a user may access
+ */
 public class Activity {
     private String title;
     private String location;
@@ -27,11 +30,11 @@ public class Activity {
     public String viewTime(){
         return this.startTime+"-"+this.endTime;
     }
-    
-    public void changeTime(String time){
-        
-    }
-    
+
+    /**
+     * Converts the time strings into numbers and subtracts them to get the total amound of time an activity takes
+     * @return the duration of the activity in minutes
+     */
     public int calculateDuration(){
         int hourStringToInt=startTime.indexOf(":");
         String hour=startTime.substring(0, hourStringToInt);
@@ -48,7 +51,7 @@ public class Activity {
     }
     
     public String toString(){
-        return "Title: "+this.title+" Locations: "+this.location+" Start Time: "+this.startTime+" End Time: "+this.endTime;
+        return "Title: "+this.title+"\nLocations: "+this.location+"\nStart Time: "+this.startTime+"\nEnd Time: "+this.endTime;
     }
     
 }

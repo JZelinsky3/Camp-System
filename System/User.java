@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 
+/**
+ * Stores data on a user
+ */
 public class User {
     protected UUID id;
     protected String firstName; 

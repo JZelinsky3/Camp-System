@@ -21,12 +21,4 @@ public class CamperList {
     public Camper getCamper(Camper camper){
         return campers.get(campers.indexOf(camper));
     }
-
-    public void editCamper(Camper camper){
-
-    }
-
-    public void saveCamper(Camper camper){
-        
-    }
 }

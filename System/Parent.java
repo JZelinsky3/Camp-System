@@ -1,7 +1,9 @@
 package System;
 
 import java.util.ArrayList;
-
+/**
+ * Stores information on the parent of a camper
+ */
 public class Parent {
     
     private ArrayList<Camper> children=new ArrayList<Camper>();

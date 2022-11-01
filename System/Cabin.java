@@ -11,11 +11,11 @@ public class Cabin{
         this.schedule=schedules;
     }
     
-    public void addToCabin(RegisteredUser user){
+    public void addToCabin(User user){
         
     }
     
-    public void removeFromCabin(RegisteredUser user){
+    public void removeFromCabin(User user){
         
     }
 }

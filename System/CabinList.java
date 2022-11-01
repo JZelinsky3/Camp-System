@@ -23,12 +23,4 @@ public class CabinList {
     public Cabin getCabin(Cabin cabin){
         return cabins.get(cabins.indexOf(cabin));
     }
-
-    public void editCabin(Cabin cabin){
-
-    }
-
-    public void saveCabin(Cabin cabin){
-        
-    }
 }

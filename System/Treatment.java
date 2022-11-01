@@ -1,5 +1,8 @@
 package System;
 
+/**
+ * Stores information on what a user needs should a user have a medical emergency
+ */
 import java.util.UUID;
 
 public class Treatment {
