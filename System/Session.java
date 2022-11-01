@@ -1,93 +1,87 @@
 package System;
 
-<<<<<<< HEAD
 import java.util.UUID;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Session {
-
     private UUID id;
     private LocalDate startDate;
     private LocalDate endDate;
-    private int ageGroup;
-    private int availableSpots;
+    private int spotsLeft;
+    private String theme;
     private ArrayList<Cabin> cabins;
 
-    public Session(LocalDate startDate, LocalDate endDate, int ageGroup) {
 
+    public Session(LocalDate startDate, LocalDate endDate) {
+        id = UUID.randomUUID();
+        this.startDate = startDate;
+        this.endDate = endDate;
+        cabins = new ArrayList<>();
+    }
+
+    public Session(UUID id, LocalDate startDate, LocalDate endDate) {
+        this.id = id;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        cabins = new ArrayList<>();
     }
 
     public LocalDate getStartDate(){
-        return startDate;
+        return this.startDate;
     }
 
     public LocalDate getEndDate(){
-        return endDate;
+        return this.endDate;
     }
 
-    public Session(UUID id, LocalDate startDate, LocalDate endDate, int ageGroup) {
-        this.id = id;
-    }
-
-    public void setAvailableSpots(int availableSpots) {
-
+    public ArrayList<Cabin> getCabins(){
+        return this.cabins;
     }
 
     public UUID getUUID() {
-        return id;
+        return this.id;
+    }
+
+    public String getTheme() { 
+        return this.theme;
+    }
+
+    public int getSpotsLeft() {
+        return this.spotsLeft;
+    }
+
+    public void decreaseSpotsLeft() {
+        this.spotsLeft--;
     }
     
-    /**
-     * 
-     * @return
-     */
-    public boolean isAvailable() {
-        return true;
+    public void setSpotsLeft(int SpotsLeft) {
+        this.spotsLeft = spotsLeft;
     }
-    
-    public int viewAgeGroup() {
-        return 0;
+ 
+    public boolean isSpots() {
+        return cabins.size() < spotsLeft;
     }
-    
+  
     public void addCabins(ArrayList<Cabin> cabins) {
-        ;
+        this.cabins = cabins;
+    }
+
+    public void addTheme(String theme) {
+        this.theme = theme;
     }
 
     public void addCabin(Cabin cabin) {
-        ;
+        this.cabins.add(cabin);
     }
 
     public String toString() {
-        return "";
+        String print = "Start Date: "+this.startDate+"\nEnd Date: "+this.endDate+"\nAvailable spots: "+this.spotsLeft+"\nTheme: "+this.theme+"\nCabins: ";
+        for (int i = 0; i < cabins.size(); i++) {
+			if (cabins.get(i) != null) {
+                print += cabins.get(i)+"\n";
+            }
+		}
+        return print;
     }
 }
-=======
-import java.time.LocalDate;
-import java.util.UUID;
-
-public class Session {
-    
-    private UUID id;
-
-    private LocalDate startDate;
-
-    private LocalDate endDate;
-
-    private int ageGroup;
-
-    private String theme;
-
-    private int availableSports;
-
-    public UUID getUuid(){
-        return id;
-    }
-
-    public Session(LocalDate startDate, LocalDate endDate, int ageGroup){
-        this.startDate=startDate;
-        this.endDate=endDate;
-        this.ageGroup=ageGroup;
-    }
-}
->>>>>>> edf40814e97daf1cf2c3888310f54499101243b3
