@@ -1,23 +1,37 @@
+package System;
+
 import java.util.ArrayList;
 
 public class Schedule {
+    private ArrayList<Activity> activities;
 
-    private Cabin cabin;    
-    private ArrayList<Activity> activities; 
-    private int breakfast;  
-    private int lunch;    
-    private int dinner;   
-
-    public Schedule(Cabin cabin, ArrayList<Activity> activities, int breakfast, int lunch, int dinner) {    
-        this.cabin = cabin; 
-        this.activities = activities; 
-        this.breakfast = breakfast;   
-        this.lunch = lunch;   
-        this.dinner = dinner; 
+    public Schedule(ArrayList<Activity> activities){ 
+        this.activities = activities;
     }
 
-    public void editSchedule(ArrayList<String> activities) {
-        
+    public void addActivity(Activity activity) {
+        this.activities.add(activity);
+    }
+
+    public ArrayList<Activity> getActivities() {
+        return this.activities;
+    }
+
+    public void removeActivity(Activity activity) {
+        for(int i = 0; i < this.activities.size(); i++) {
+            if(this.activities.get(i) == activity) {
+                this.activities.remove(i);
+            }
+        }
+    }
+
+    public String toString(){
+        String print = "Activities: ";
+        for (int i = 0; i < activities.size(); i++) {
+			if (activities.get(i) != null) {
+                print += activities.get(i)+"\n";
+            }
+		}
+        return print;
     }
 }
-
