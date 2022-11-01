@@ -17,6 +17,6 @@ public class Contact {
     }
 
     public String toString() {
-        return "Name: "+firstName+" "+lastName+" Phone Number: "+phoneNumber+" Relationship: "+relationship;
+        return "Name: "+firstName+" "+lastName+"\nPhone Number: "+phoneNumber+"\nRelationship: "+relationship;
     }
 }

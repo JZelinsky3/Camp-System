@@ -17,6 +17,6 @@ public class Physician {
     }
 
     public String toString(){
-        return "Name: "+this.firstName+" "+this.lastName+" Phone Number: "+this.phoneNum+" Address: "+this.address;
+        return "Name: "+this.firstName+" "+this.lastName+"\nPhone Number: "+this.phoneNum+"\nAddress: "+this.address;
     }
 }

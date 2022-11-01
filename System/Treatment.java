@@ -23,7 +23,7 @@ public class Treatment {
     public Treatment(String treatName, String treatTime) {
     }
     public String toString(){
-        return "Details: "+this.details+" Quantity: "+this.quantity+" Since Exposure: "+this.sinceExposure+" Directions: "+this.directions;
+        return "Details: "+this.details+"\nQuantity: "+this.quantity+"\nSince Exposure: "+this.sinceExposure+"\nDirections: "+this.directions;
     }
 
 
