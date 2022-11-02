@@ -8,7 +8,7 @@ public class Cabin {
     private UUID id;
     private int lowCabinAge;
     private int maxCabinAge;
-    private int CabinCapacity = 8;
+    private int CabinCapacity = 15;
     private ArrayList<Camper> campers;
     private HashMap<Day, Schedule> schedules; {
 
