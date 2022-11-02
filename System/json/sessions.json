@@ -1,120 +1,448 @@
 [
     {
         "id": "",
-        "startDate": "2022-07-12",
-        "endDate": "2022-07-19",
-        "availableSpots": 20,
+        "startDate": "2022-07-02",
+        "endDate": "2022-07-09",
+        "spotsLeft": 9,
         "theme": "outdoors week",
         "cabins": [
             ""
-        ]
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
     },
     {
         "id": "",
-        "startDate": "2022-07-20",
-        "endDate": "2022-07-27",
-        "availableSpots": 2,
-        "theme": "water week",
+        "startDate": "2022-07-09",
+        "endDate": "2022-07-16",
+        "spotsLeft": 9,
+        "theme": "team-building week",
         "cabins": [
             ""
-        ]
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
     },
     {
         "id": "",
-        "cabinAge": 17,
-        "cabinCapacity": 20,
-        "cabins": {
+        "startDate": "2022-07-16",
+        "endDate": "2022-07-23",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-07-23",
+        "endDate": "2022-07-30",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-07-30",
+        "endDate": "2022-08-06",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-08-06",
+        "endDate": "2022-07-13",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-08-13",
+        "endDate": "2022-08-20",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-08-20",
+        "endDate": "2022-08-27",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "id": "",
+        "startDate": "2022-08-27",
+        "endDate": "2022-09-02",
+        "spotsLeft": 9,
+        "theme": "",
+        "cabins": [
+            ""
+        ],
+        "lowCabinAge": 1,
+        "maxCabinAge": 1
+    },
+    {
+        "campers": [],
+        "schedules": {
             "MONDAY": [
                 {
-                    "title": "dodgeball",
-                    "location": "backyard",
-                    "startTime": "1400",
-                    "endTime": "1500"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
                 },
                 {
-                    "title": "lazy river",
-                    "location": "river",
-                    "startTime": "1200",
-                    "endTime": "1500"
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Baseball"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Obstacle Course"
+                },
+                {
+                    "location": "Pool",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Pool Fun"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Auditorium",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Movie"
                 }
             ],
             "TUESDAY": [
                 {
-                    "title": "hiking",
-                    "location": "park",
-                    "startTime": "1100",
-                    "endTime": "1330"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast Buffet"
                 },
                 {
-                    "title": "cliff jumping",
-                    "location": "lake",
-                    "startTime": "1000",
-                    "endTime": "1230"
+                    "location": "Woods",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Hike"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "Field House",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Basketball"
+                },
+                {
+                    "location": "Pool",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Swimming Time"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Campfire",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Create Camp Song"
                 }
             ],
             "WEDNESDAY": [
                 {
-                    "title": "horseback riding",
-                    "location": "park",
-                    "startTime": "1130",
-                    "endTime": "1230"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
                 },
                 {
-                    "title": "",
-                    "location": "water balloon fight",
-                    "startTime": "1500",
-                    "endTime": "1630"
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Capture the Flag"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "River",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Tubing"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "DIY Kites"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Campfire",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "S'mores"
                 }
             ],
             "THURSDAY": [
                 {
-                    "title": "",
-                    "location": "river",
-                    "startTime": "1500",
-                    "endTime": "1600"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
                 },
                 {
-                    "title": "lake fun",
-                    "location": "lake",
-                    "startTime": "1100",
-                    "endTime": "1430"
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Arts and Crafts"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Volleyball"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Potato Sack Relay"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner Buffet"
+                },
+                {
+                    "location": "Campfire",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Story Telling"
                 }
             ],
             "FRIDAY": [
                 {
-                    "title": "disc golf",
-                    "location": "backyard",
-                    "startTime": "1500",
-                    "endTime": "1600"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
                 },
                 {
-                    "title": "kayaking",
-                    "location": "lake",
-                    "startTime": "1100",
-                    "endTime": "1230"
-                }
-            ]
-        },
-        "campers": [
-            ""
-        ]
-    },
-    {
-        "id": "",
-        "cabinAge": 12,
-        "maxNumberOfCampers": 20,
-        "schedules": {
-            "THURSDAY": [
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Tug of War"
+                },
                 {
-                    "title": "corn hole",
-                    "location": "backyard",
-                    "startTime": "1800",
-                    "endTime": "1930"
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Make Tye-dye Shirts"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Ultimate Frisbee"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Making Bird Feeders"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Movie Night"
+                }
+            ],
+            "SATURDAY": [
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
+                },
+                {
+                    "location": "Woods",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Hiking"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch Buffet"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Archery"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Talent Show"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Scavenger Hunt"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Hide and Seek"
+                }
+            ],
+            "SUNDAY": [
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Breakfast"
+                },
+                {
+                    "location": "River",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Fishing"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Relay Race"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Lunch"
+                },
+                {
+                    "location": "River",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Kayaking"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Water Balloon Fight"
+                },
+                {
+                    "location": "Backyard",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Horseback Riding"
+                },
+                {
+                    "location": "Cafe",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Dinner"
+                },
+                {
+                    "location": "Rec Hall",
+                    "startTime": null,
+                    "endTime": null,
+                    "title": "Board Games"
                 }
             ]
         },
-        "campers": [
-            ""
-        ]
+        "id": ""
     }
 ]

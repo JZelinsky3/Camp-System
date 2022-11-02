@@ -42,7 +42,7 @@ public class SystemFACADE {
         return -1;
     }
 
-    public void createUserAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, String preferredContact, LocalDate birthday, String address){
+    public void createUserAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, LocalDate birthday, String address){
        
         User newUser = new User(firstName, lastName, userName);
         newUser.addAddress(address);
@@ -50,13 +50,12 @@ public class SystemFACADE {
         newUser.addPassword(password);
         newUser.addBirthday(birthday);
         newUser.addPhoneNumber(phoneNumber);
-        newUser.addPreferredContact(preferredContact);
         newUser.setType(Type.PARENT);
 
         users.addUser(newUser);
     }
 
-    public void createCounselorAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, String preferredContact, LocalDate birthday, String address, String biography, Medical medicalInfo){
+    public void createCounselorAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, LocalDate birthday, String address, String bio, Medical medical){
         
         Counselor newCounselor = new Counselor(firstName, lastName, userName);
         newCounselor.addAddress(address);
@@ -64,21 +63,19 @@ public class SystemFACADE {
         newCounselor.addPassword(password);
         newCounselor.addBirthday(birthday);
         newCounselor.addPhoneNumber(phoneNumber);
-        newCounselor.addPreferredContact(preferredContact);
-        newCounselor.addBiography(biography);
-        newCounselor.addMedical(medicalInfo);
+        newCounselor.addBio(bio);
+        newCounselor.addMedical(medical);
         newCounselor.setType(Type.COUNSELOR);
 
         counselors.addCounselor(newCounselor);
     }
 
-    public boolean addCamper(String firstName, String lastName, LocalDate birthday, Contact emergencyContact, Medical medicalInfo, ArrayList<String> notes){
+    public boolean addCamper(String firstName, String lastName, LocalDate birthday, Contact emergencyContact, Medical medical){
         Camper newCamper = new Camper(firstName, lastName, birthday);
         ArrayList<Contact> emergencyContacts = new ArrayList<Contact>();
         emergencyContacts.add(emergencyContact);
-        newCamper.addEmergContacts(emergencyContacts);
-        newCamper.addMedical(medicalInfo);
-        newCamper.addNotes(notes);
+        newCamper.addEmergencyContacts(emergencyContacts);
+        newCamper.addMedical(medical);
 
         campers.addCamper(newCamper);
         currentUser.addCamper(newCamper);
@@ -90,12 +87,12 @@ public class SystemFACADE {
         int counter = 0;
         for(Cabin cabin : session.getCabins()){
             counter ++;
-            if(camper.getAge() >= cabin.getMinCabinAge() && camper.getAge() <= cabin.getMaxCabinAge()){
-                if(cabin.getMaxNumberOfCampers() <= cabin.getCampers().size()){
+            if(camper.getAge() >= cabin.getLowCabinAge() && camper.getAge() <= cabin.getMaxCabinAge()){
+                if(cabin.getCabinCapacity() <= cabin.getCampers().size()){
                     continue;
                 }
                 camper.addSession(session);
-                session.decreaseAvailableSpots();
+                session.removeSpotsLeft();
                 cabin.addCamper(camper);
                 return counter;
             }
@@ -103,7 +100,7 @@ public class SystemFACADE {
         return -1;
     }
 
-    public Camper findCamperByName(String firstName, String lastName){
+    public Camper findCamper(String firstName, String lastName){
         Camper camper = null;
         for(Camper c : currentUser.campers){
             if(c.getFirstName().equalsIgnoreCase(firstName) && c.getLastName().equalsIgnoreCase(lastName)){
@@ -151,9 +148,9 @@ public class SystemFACADE {
         return true;
     }
 
-    public void giveStrike(String firstName, String lastName, String reason){
-        Camper camper = findCamperByName(firstName, lastName);
-        camper.giveStrike(reason);
+    public void giveExpulsion(String firstName, String lastName, String reason){
+        Camper camper = findCamper(firstName, lastName);
+        camper.giveExpulsion(reason);
     }
 
     public void createSession(LocalDate start, LocalDate end, String theme){
@@ -172,9 +169,9 @@ public class SystemFACADE {
     public String getUserInformation(){
         String info = new String();
         if(currentUser.getCampers().isEmpty()){
-            info = "You have no campers added to your account.\n";
+            info = "Your account currently has no campers added.\n";
         }else{
-            info = "You have the following campers added to your account:\n";
+            info = "Your account has the following campers added:\n";
             for(Camper c : currentUser.getCampers()){
                 info += c.getFirstName() + " " + c.getLastName();
                 if(!c.getSessions().isEmpty()){
@@ -198,10 +195,10 @@ public class SystemFACADE {
         return sessionList;
     }
 
-    public void printRoster(int sessionNr){
-        Session session = sessions.getSessions().get(sessionNr - 1);
+    public void printRoster(int sessionNum){
+        Session session = sessions.getSessions().get(sessionNum - 1);
         Cabin toPrint = findCounselorsCabin(session);
-        File rosterFile = new File("System/roster.txt");
+        File rosterFile = new File("System/txt/camperdirectory.txt");
         try{
             rosterFile.createNewFile();
             writer = new FileWriter(rosterFile);
@@ -215,14 +212,14 @@ public class SystemFACADE {
         }
     }
 
-    public void printWeekInfo(int sessionNr){
-        Session session = sessions.getSessions().get(sessionNr - 1);
+    public void printWeekInfo(int sessionNum){
+        Session session = sessions.getSessions().get(sessionNum - 1);
         Cabin toPrint = findCounselorsCabin(session);
-        File infoFile = new File("System/info.txt");
+        File infoFile = new File("System/txt/info.txt");
         try{
             infoFile.createNewFile();
             writer = new FileWriter(infoFile);
-            writer.write("--- VITAL INFORMATION FOR THE WEEK FROM " + session.getStartDate() + " TO " + session.getEndDate() + " ---");
+            writer.write("--- Important information for the week of " + session.getStartDate() + " to " + session.getEndDate() + " ---");
             for(Camper c : toPrint.getCampers()){
                 writer.write("- " + c.getFirstName() + c.getLastName() + ":");
                 writer.write("  -> ALLERGIES: " + c.getMedical().getAllergies());
@@ -235,13 +232,13 @@ public class SystemFACADE {
                 }
                 writer.write("  -> EMERGENCY CONTACTS: ");
                 for(Contact emergency : c.getEmergencyContacts()){
-                    writer.write("      - " + emergency.getFirstName() + " " + emergency.getLastName() + ", " + emergency.getAddress() + ", " + emergency.getPhoneNumber());
+                    writer.write("      - " + emergency.getFirstName() + " " + emergency.getLastName() + ", " + emergency.getPhoneNumber() + ", " + emergency.getRelationship());
                 }
                 writer.write("  -> MEDICAL INFORMATION: ");
-                Contact doc = c.getMedical().getDoctor();
-                writer.write("      - Doctor: " + doc.getFirstName() + " " + doc.getLastName() + ", " + doc.getAddress() + ", " + doc.getPhoneNumber());
-                writer.write("      - Medications: ");
-                for(Medication m : c.getMedical().getMedications()){
+                Contact doc = c.getMedical().getPhysician();
+                writer.write("      - : " + doc.getFirstName() + " " + doc.getLastName() + ", " + doc.getPhoneNumber());
+                writer.write("      - TREATMENTS: ");
+                for(Treatment m : c.getMedical().getTreatments()){
                     writer.write("      " + m.getName() + ", " + m.getTime());
                 }
                 writer.close();
@@ -251,10 +248,10 @@ public class SystemFACADE {
         }
     }
 
-    public void printSchedule(int sessionNr){
-        Session session = sessions.getSessions().get(sessionNr - 1);
+    public void printSchedule(int sessionNum){
+        Session session = sessions.getSessions().get(sessionNum - 1);
         Cabin toPrint = findCounselorsCabin(session);
-        File scheduleFile = new File("System/schedule.txt");
+        File scheduleFile = new File("System/txt/schedule.txt");
         try{
             scheduleFile.createNewFile();
             writer = new FileWriter(scheduleFile);

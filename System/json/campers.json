@@ -9,13 +9,13 @@
                 "firstName": "Carter",
                 "lastName": "Hart",
                 "phoneNumber": "218-888-5421",
-                "address": ""
+                "address": "291 Lake View Drive, Greensburg, PA 15601"
             },
             {
                 "firstName": "Tom",
                 "lastName": "Jones",
                 "phoneNumber": "887-927-4551",
-                "address": ""
+                "address": "916 Leatherwood Road, Morgantown, WV 26508"
             }
         ],
         "guardians": [
@@ -23,13 +23,13 @@
                 "firstName": "Jessica",
                 "lastName": "Taylor",
                 "phoneNumber": "233-583-6734",
-                "address": ""
+                "address": "229 Walnut Avenue, Victoria, TX 77904"
             },
             {
                 "firstName": "Roger",
                 "lastName": "Rich",
                 "phoneNumber": "703-122-4458",
-                "address": ""
+                "address": "291 Lake View Drive, Greensburg, PA 15601"
             }
         ],
         "medical": {
@@ -37,13 +37,14 @@
                 "firstName": "Ashley",
                 "lastName": "Richards",
                 "phoneNumber": "514-875-2291",
-                "address": ""
+                "address": "1800 Norwich Lane, Saint Louis, MD 63101"
             },
             "allergies": [
                 "NA"
             ],
             "treatments": [
                 {
+                    "name": "NA",
                     "description": "NA",
                     "time": "NA"
                 }
@@ -63,13 +64,13 @@
                 "firstName": "Carter",
                 "lastName": "Hart",
                 "phoneNumber": "218-888-5421",
-                "address": ""
+                "address": "291 Lake View Drive, Greensburg, PA 15601"
             },
             {
                 "firstName": "Tom",
                 "lastName": "Jones",
                 "phoneNumber": "887-927-4551",
-                "address": ""
+                "address": "916 Leatherwood Road, Morgantown, WV 26508"
             }
         ],
         "guardians": [
@@ -77,13 +78,13 @@
                 "firstName": "Jessica",
                 "lastName": "Taylor",
                 "phoneNumber": "233-583-6734",
-                "address": ""
+                "address": "229 Walnut Avenue, Victoria, TX 77904"
             },
             {
                 "firstName": "Roger",
                 "lastName": "Rich",
                 "phoneNumber": "703-122-4458",
-                "address": ""
+                "address": "291 Lake View Drive, Greensburg, PA 15601"
             }
         ],
         "medical": {
@@ -91,23 +92,19 @@
                 "firstName": "Booter",
                 "lastName": "Lang",
                 "phoneNumber": "843-551-7543",
-                "address": ""
+                "address": "958 Myrtle Lane, Upper Marlboro, MD 20772"
             },
             "allergies": [
-                "",
-                ""
+                "Pollen"
             ],
             "medications": [
                 {
-                    "description": "",
-                    "time": ""
+                    "name": "Benadryl",
+                    "description": "Take will water",
+                    "time": "Before Breakfest and Lunch"
                 }
             ]
         },
-        "notes": [
-            "",
-            ""
-        ],
         "sessions": [
             ""
         ]
