@@ -1,4 +1,5 @@
 package System;
+
 /**
  * Contact information for a user
  */
@@ -16,7 +17,23 @@ public class Contact {
         this.relationship = relationship;
     }
 
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
+
+    public String getRelationship() {
+        return this.relationship;
+    }
+
     public String toString() {
-        return "Name: "+firstName+" "+lastName+"\nPhone Number: "+phoneNumber+"\nRelationship: "+relationship;
+        return "Name: "+this.firstName+" "+this.lastName+"\nPhone number: "+this.phoneNumber+"\nRelationship :"+this.relationship;
     }
 }

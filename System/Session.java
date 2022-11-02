@@ -1,5 +1,4 @@
 package System;
-
 import java.util.UUID;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -11,7 +10,6 @@ public class Session {
     private int spotsLeft;
     private String theme;
     private ArrayList<Cabin> cabins;
-
 
     public Session(LocalDate startDate, LocalDate endDate) {
         id = UUID.randomUUID();
@@ -43,7 +41,8 @@ public class Session {
         return this.id;
     }
 
-    public String getTheme() { 
+    //adds themes and decription
+    public String getTheme() {
         return this.theme;
     }
 
@@ -51,18 +50,18 @@ public class Session {
         return this.spotsLeft;
     }
 
-    public void decreaseSpotsLeft() {
+    public void removeSpotsLeft() { 
         this.spotsLeft--;
     }
-    
-    public void setSpotsLeft(int SpotsLeft) {
+
+    public void setSpotsLeft(int spotsLeft) {
         this.spotsLeft = spotsLeft;
     }
- 
+
     public boolean isSpots() {
         return cabins.size() < spotsLeft;
     }
-  
+    
     public void addCabins(ArrayList<Cabin> cabins) {
         this.cabins = cabins;
     }
@@ -74,9 +73,9 @@ public class Session {
     public void addCabin(Cabin cabin) {
         this.cabins.add(cabin);
     }
-
+    
     public String toString() {
-        String print = "Start Date: "+this.startDate+"\nEnd Date: "+this.endDate+"\nAvailable spots: "+this.spotsLeft+"\nTheme: "+this.theme+"\nCabins: ";
+        String print = "Start Date: "+this.startDate+"\nEnd Date: "+this.endDate+"\nSpots left: "+this.spotsLeft+"\nTheme: "+this.theme+"\nCabins: ";
         for (int i = 0; i < cabins.size(); i++) {
 			if (cabins.get(i) != null) {
                 print += cabins.get(i)+"\n";
