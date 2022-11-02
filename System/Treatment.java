@@ -1,5 +1,8 @@
 package System;
 
+/**
+ * Stores data on a treatment a user might need
+ */
 public class Treatment {
     private String name;
     private String description;
