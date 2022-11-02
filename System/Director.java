@@ -9,7 +9,8 @@ public class Director {
     
     private ArrayList<Expelled> expulsion = new Arraylist<Expelled>();
     
-    private ArrayList<Scholarships> scholarships = new Arraylist<Scholarships>();
+    private ArrayList<Scholarship> scholarships = new Arraylist<Scholarships>();
+    
     public void addCamperSchedule(Schedule schedule){
     }
     
@@ -24,7 +25,7 @@ public class Director {
     public void removeExpelled(Expelled expelled){
     }
     
-    public void addScholarships(Scholarships scholarships){
+    public void addScholarships(Scholarship scholarships){
     }
     
     }

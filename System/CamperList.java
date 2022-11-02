@@ -1,6 +1,9 @@
 package System; 
 import java.util.ArrayList;
 
+/**
+ * Stores a list of campers saved in the system
+ */
 public class CamperList {
     private ArrayList<Camper> campers;
     private static CamperList camperList;

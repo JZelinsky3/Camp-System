@@ -1,6 +1,8 @@
 package System;
 import java.util.ArrayList;
-
+/**
+ * Lists users stored in the system
+ */
 public class UserList {
     private ArrayList<User> users;
     private static UserList userList;
@@ -26,7 +28,9 @@ public class UserList {
         }
         return null;
     }
-
+    /*
+     * Checks if a user has a given username and returns true if it is and false if it isn't
+     */
     public boolean hasUser(String userName) {
         for(User user : users)
         {

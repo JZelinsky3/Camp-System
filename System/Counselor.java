@@ -2,6 +2,9 @@ package System;
 import java.util.ArrayList;
 import java.util.UUID;
 
+/**
+ * Stores data on a counselor
+ */
 public class Counselor extends User{
     private String bio;
     private ArrayList<Cabin> cabins;

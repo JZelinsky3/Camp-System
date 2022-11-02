@@ -1,6 +1,9 @@
 package System;
 import java.util.ArrayList;
 
+/**
+ * Stores a list of counselors saved in the system
+ */
 public class CounselorList {
 
     private ArrayList<Counselor> counselors;

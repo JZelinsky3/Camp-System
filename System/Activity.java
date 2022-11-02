@@ -39,10 +39,17 @@ public class Activity {
         }
     }
 
+    /**
+     * Returns a string expressing start and end time of an activity
+     * @return
+     */
     public String viewTime(){
         return "The activity starts "+this.startTime+" and ends at "+this.endTime+".";
     }
-
+    
+    /** 
+     * Converts the start and end times into minutes and subtracts the start from the end to determine the duration of an activity in minutes
+    */
     public long calculateDuration(){
         LocalTime start = LocalTime.of(Integer.parseInt(startTime.substring(0, 1)), Integer.parseInt(startTime.substring(3, 4)), 0);
         LocalTime end = LocalTime.of(Integer.parseInt(endTime.substring(0, 1)), Integer.parseInt(endTime.substring(3, 4)), 0);
