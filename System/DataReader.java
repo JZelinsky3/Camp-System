@@ -25,10 +25,6 @@ public class DataReader extends DataConstants {
         }
     }
 
-    /**
-     * Returns users
-     * @return ArrayList<User>
-     */
     public static ArrayList<User> getAllUsers() {
         users = new ArrayList<>();
 
@@ -127,7 +123,7 @@ public class DataReader extends DataConstants {
                     LocalDate.parse(birthday));
 
                 ArrayList<Contact> newEmegConts = getContacts( (JSONArray) camper.get(EMERGENCY_CONTACTS) );
-                newCamper.addEmergContacts(newEmegConts);
+                newCamper.addEmergencyContacts(newEmegConts);
 
                 ArrayList<Contact> newGuardians = getContacts( (JSONArray) camper.get(GUARDIANS) );
                 newCamper.addGuardians(newGuardians);
@@ -181,7 +177,7 @@ public class DataReader extends DataConstants {
                     LocalDate.parse((String) session.get(START_DATE)),
                     LocalDate.parse((String) session.get(END_DATE)));
 
-                newSession.setAvailableSpots(
+                newSession.setSpotsLeft(
                     ((Long) session.get(SPOTS_LEFT)).intValue());
                 
                 newSession.addTheme((String) session.get(THEME));
@@ -203,7 +199,7 @@ public class DataReader extends DataConstants {
         
         try {
             
-            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
+            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 
@@ -214,7 +210,7 @@ public class DataReader extends DataConstants {
                     UUID.fromString((String) cabin.get(USER_ID)), 
                     ((Long) cabin.get(CABIN_AGE)).intValue());
 
-                newCabin.addMaxCampers( ((Long) cabin.get(MAX_NO_OF_CAMPERS)).intValue() );
+                newCabin.addMaxCapacity( ((Long) cabin.get(CABIN_CAPACITY)).intValue() );
 
                 HashMap<Day, Schedule> newSchedules = new HashMap<>();
                 JSONObject schedules = (JSONObject) cabin.get(SCHEDULES);
@@ -248,7 +244,7 @@ public class DataReader extends DataConstants {
 
         try {
             
-            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
+            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 
@@ -387,13 +383,12 @@ public class DataReader extends DataConstants {
 
     private static Medical getMedical(JSONObject medical) {
         
-        JSONObject doctor = (JSONObject) medical.get(DOCTOR);
+        JSONObject physician = (JSONObject) medical.get(PHYSICIAN);
     
         Contact doc = new Contact(
-            (String) doctor.get(FIRST_NAME), 
-            (String) doctor.get(LAST_NAME), 
-            (String) doctor.get(PHONE_NUMBER),
-            (String) doctor.get(ADDRESS) );
+            (String) physician.get(FIRST_NAME), 
+            (String) physician.get(LAST_NAME), 
+            (String) physician.get(PHONE_NUMBER));
 
         ArrayList<String> newAllergies = new ArrayList<>();
         JSONArray allergies = (JSONArray) medical.get(ALLERGIES);
@@ -408,7 +403,8 @@ public class DataReader extends DataConstants {
             JSONObject treatment = (JSONObject) treatments.get(i);
 
             newTreatments.add( new Treatment(
-                (String) treatment.get(DETAILS),
+                (String) treatment.get(NAME),
+                (String) treatment.get(DESCRIPTION),
                 (String) treatment.get(TIME) ));
         }
         
@@ -428,8 +424,7 @@ public class DataReader extends DataConstants {
             Contact newContact = new Contact(
                 (String) contact.get(FIRST_NAME), 
                 (String) contact.get(LAST_NAME), 
-                (String) contact.get(PHONE_NUMBER),
-                (String) contact.get(ADDRESS));
+                (String) contact.get(PHONE_NUMBER));
 
             contactsList.add(newContact);
         }
