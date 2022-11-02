@@ -1,34 +1,61 @@
 package System;
-
 import java.util.ArrayList;
 
 public class CabinList {
-    
-    private ArrayList<Cabin> cabins=new ArrayList<Cabin>();
-
-    private CabinList cabinList;
+    private ArrayList<Cabin> cabins;
+    private static CabinList cabinList;
 
     private CabinList(){
-        
+        cabins = DataReader.getAllCabins();
+        cabinList = this;
     }
 
-    public CabinList getInstance(){
+    public static CabinList getInstance(){
+        if (cabinList == null) {
+			cabinList = new CabinList();
+		}
+		return cabinList;    
+    }
+
+    public Cabin getCabin(int lowCabinAge, int maxCabinAge) {
+        for(int i = 0; i < cabins.size(); i++) {
+            if(cabins.get(i) == new Cabin(lowCabinAge, maxCabinAge)){
+                return cabins.get(i);
+            }
+        }
         return null;
     }
 
-    public void addCabin(Cabin cabin){
-        cabins.add(cabin);
+    public ArrayList<Cabin> getCabins() {
+        return cabins;
     }
 
-    public Cabin getCabin(Cabin cabin){
-        return cabins.get(cabins.indexOf(cabin));
+    public boolean hasCabin(int lowCabinAge, int maxCabinAge) {
+        for (int i = 0; i < cabins.size(); i++) {
+            if(cabins.get(i) == new Cabin(lowCabinAge, maxCabinAge)) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    public void editCabin(Cabin cabin){
-
+    public boolean addCabin(Cabin cabin) {
+        if(!hasCabin(cabin.getLowCabinAge(), cabin.getMaxCabinAge())) {
+            cabins.add(cabin);
+            return true;
+        }
+        return false;
     }
 
-    public void saveCabin(Cabin cabin){
-        
+    public void editCabin(Cabin cabin, int lowCabinAge, int maxCabinAge) {
+        for (int i = 0; i < cabins.size(); i++) {
+            if(cabins.get(i) == cabin) {
+                cabins.set(i,new Cabin(lowCabinAge, maxCabinAge));
+            }
+        }
     }
+
+    public void saveCabins() {
+        DataWriter.saveCabins();
+    } 
 }

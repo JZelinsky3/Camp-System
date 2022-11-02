@@ -36,10 +36,6 @@ public class User {
     public String getPassword(){
         return password;
     }
-    
-    public void addCampers(ArrayList<Camper> campers) {
-        this.campers = campers;
-    }
 
     public void addPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
@@ -57,6 +53,10 @@ public class User {
         this.birthday = birthday;
     }
 
+    public void addCampers(ArrayList<Camper> campers) {
+        this.campers = campers;
+    }
+
     public void addCamper(Camper camper) {
         this.campers.add(camper);
     }
@@ -65,12 +65,12 @@ public class User {
         this.address = address;
     }
 
-    private int calculateAge() {    
+    protected int calculateAge() {    
         LocalDate currentDate = LocalDate.now();  
         return Period.between(this.birthday, currentDate).getYears();
     }
 
-    public void enrollCamper(Camper camper, Session session) {
+    public void registerCamper(Camper camper, Session session) {
         //need more info on method
         this.campers.add(camper);
     }

@@ -1,32 +1,32 @@
+package System; 
 import java.util.ArrayList;
 
 public class CamperList {
-    
-    private ArrayList<Camper> campers=new ArrayList<Camper>();
-
-    private CamperList camperList;
+    private ArrayList<Camper> campers;
+    private static CamperList camperList;
 
     private CamperList(){
-        
+        campers = DataReader.getAllCampers();
+        camperList = this;
     }
 
-    public CamperList getInstance(){
-        return camperList;
+    public static CamperList getInstance(){
+        if (camperList == null) {
+			camperList = new CamperList();
+		}
+		return camperList;    
     }
 
     public void addCamper(Camper camper){
         campers.add(camper);
     }
 
-    public Camper getCamper(Camper camper){
-        return campers.get(campers.indexOf(camper));
+    public ArrayList<Camper> getCampers(){
+        return campers;
     }
 
-    public void editCamper(Camper camper){
-
+    public void saveCampers(){
+        DataWriter.saveCampers();
     }
-
-    public void saveCamper(Camper camper){
-        
-    }
+    
 }

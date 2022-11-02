@@ -12,24 +12,6 @@ import org.json.simple.JSONObject;
 
 public class DataWriter extends DataConstants {
 
-    //FOR TESTING
-    public static void main(String[] args) {
-
-        // TESTING saveUsers()
-        UserList ul = UserList.getInstance();
-        User us = new User("man", "jones", "yyyyy");
-        us.setType(Type.valueOf("PARENT"));
-        us.addBirthday(LocalDate.parse("2016-08-16"));
-
-        ArrayList<Camper> cp = new ArrayList<>();
-        cp.add(new Camper(UUID.randomUUID(), "v", "xyz", null));
-        us.addCampers(cp);
-
-        ul.addUser(us);
-
-        saveUsers();
-    }
-
     public static void saveUsers() {
         UserList userListClass = UserList.getInstance();
         ArrayList<User> users = userListClass.getUsers();

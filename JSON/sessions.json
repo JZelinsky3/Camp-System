@@ -23,7 +23,7 @@
         "id": "",
         "cabinAge": 17,
         "cabinCapacity": 20,
-        "schedules": {
+        "cabins": {
             "MONDAY": [
                 {
                     "title": "dodgeball",

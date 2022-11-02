@@ -1,81 +1,148 @@
+package System;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
 
 public class Camper
 {
     private UUID id;
-    private String birthdate;
+    private String firstName;
+    private String lastName;
+    private LocalDate birthday;
     private ArrayList<Address> address;
     private ArrayList<Gender> gender;
-    private MedicalInfo medicalInfo;
+    private ArrayList<Contact> emergencyContacts;
+    private ArrayList<Contact> guardians;
+    private Medical medical;
+    private int expulsion;
+    private ArrayList<String> reasonExpulsion;
+    private ArrayList<Session> sessions;
 
-    public Camper(String birthdate, String firstName, String lastName, String username, String password, String email, MedicalInfo medicalInfo)
+    public Camper(String firstName, String lastName, LocalDate birthday)
     {
         this.id = UUID.randomUUID();
-        this.birthdate = birthdate;
+        this.birthday = birthday;
         this.address = new ArrayList<Address>();
         this.gender = new ArrayList<Gender>();
-        this.medicalInfo = medicalInfo;
+        this.medical = medical;
+        reasonExpulsion = new ArrayList<>();
+        sessions = new ArrayList<>();
     }
 
-    public UUID getId()
-    {
-        return this.id;
+    public Camper(UUID id, String firstName, String lastName, LocalDate birthday){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        emergencyContacts = new ArrayList<>();
+        guardians = new ArrayList<>();
+        reasonExpulsion = new ArrayList<>();
+        sessions = new ArrayList<>();
     }
 
-    public String getBirthdate()
-    {
-        return this.birthdate;
+    public LocalDate getBirthday() {
+        return this.birthday;
     }
 
-    public ArrayList<Address> getAddress()
-    {
-        return this.address;
+    public ArrayList<Contact> getEmergencyContacts() {
+        return this.emergencyContacts;
     }
 
-    public ArrayList<Gender> getGender()
-    {
-        return this.gender;
+    public ArrayList<Contact> getGuardians() {
+        return this.guardians;
     }
 
-    public MedicalInfo getMedicalInfo()
-    {
-        return this.medicalInfo;
+    public Medical getMedical() {
+        return this.medical;
     }
 
-    public void setBirthdate(String birthdate)
-    {
-        this.birthdate = birthdate;
+    public int getExpulsion() {
+        return this.expulsion;
     }
 
-    public void setAddress(ArrayList<Address> address)
-    {
-        this.address = address;
+    public ArrayList<String> getReasonExpulsion() {
+        return this.reasonExpulsion;
     }
 
-    public void setGender(ArrayList<Gender> gender)
-    {
-        this.gender = gender;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setMedicalInfo(MedicalInfo medicalInfo)
-    {
-        this.medicalInfo = medicalInfo;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void addAddress(String location, String streetAddress, String city, String state, String zipcode)
-    {
-        Address newAddress = new Address(location, streetAddress, city, state, zipcode);
-        this.address.add(newAddress);
+    public int getAge() {
+        return Period.between(birthday, LocalDate.now()).getYears();
     }
 
-    public void addGender(Gender gender)
-    {
-        this.gender.add(gender);
+    public UUID getUUID() {
+        return id;
     }
 
-    public boolean isValidAge(String birthdate)
-    {
-        return true;
+    public ArrayList<Session> getSessions() {
+        return sessions;
+    }
+
+    public void setExpulsion(int strikes) {
+        this.expulsion = strikes;
+    }
+
+    public void addEmergencyContacts(ArrayList<Contact> emergencyContacts) {
+        this.emergencyContacts = emergencyContacts;
+    }
+
+    public void addGuardians(ArrayList<Contact> guardians) {
+        this.guardians = guardians;
+    }
+
+    public void addMedical(Medical medical) {
+        this.medical = medical;
+    }
+
+    public void addExpulsionReason(ArrayList<String> reasons) {
+        this.reasonExpulsion = reasons;
+    }
+
+    public void addSessions(ArrayList<Session> sessions) {
+        this.sessions = sessions;
+    }
+
+    public void addSession(Session session) {
+        sessions.add(session);
+    }
+
+    public void giveExpulsion(String reason){
+        expulsion++;
+        reasonExpulsion.add(reason);
+    }
+
+    public String toString(){
+        String print = "Name :"+this.firstName+" "+this.lastName+"\nBirthday :"+this.birthday+"\nEmergency contacts :";
+        for (int i = 0; i < emergencyContacts.size(); i++) {
+			if (emergencyContacts.get(i) != null) {
+                print += emergencyContacts.get(i)+"\n";
+            }
+		}
+        print += "\nGuardians : ";
+        for (int i = 0; i < guardians.size(); i++) {
+			if (guardians.get(i) != null) {
+                print += guardians.get(i)+"\n";
+            }
+		}
+        print += "\nMedical information: "+this.medical+"\nPExpelled: "+this.expulsion+"Reason for Expulsion: ";
+        for (int i = 0; i < reasonExpulsion.size(); i++) {
+			if (reasonExpulsion.get(i) != null) {
+                print += reasonExpulsion.get(i)+"\n";
+            }
+		}
+        print += "\nSessions: ";
+        for (int i = 0; i < sessions.size(); i++) {
+			if (sessions.get(i) != null) {
+                print += sessions.get(i)+"\n";
+            }
+		}
+        return print;
     }
 }

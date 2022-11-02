@@ -1,27 +1,29 @@
 package System;
 
-import java.util.UUID;
-
 public class Treatment {
-    private UUID id;
     private String name;
-    private String details;
-    private String quantity;
-    private String sinceExposure;
-    private String directions;
+    private String description;
+    private String time;
 
-    public Treatment(String name, String quantity, String sinceExposure, String directions){
-        this.details = name;
-        this.quantity = quantity;
-        this.sinceExposure = sinceExposure;
-        this.directions = directions;
+    public Treatment(String name, String description, String time){
+        this.name = name;
+        this.description = description;
+        this.time = time; 
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public String getDescription() {
+        return this.description;
+    }
+    
+    public String getTime() {
+        return this.time;
+    }
 
-    }
-    public Treatment(String treatName, String treatTime) {
-    }
     public String toString(){
-        return "Details: "+this.details+" Quantity: "+this.quantity+" Since Exposure: "+this.sinceExposure+" Directions: "+this.directions;
+        return "Name "+this.name+"\nDescription: "+this.description+"\nTime: "+this.time;
     }
-
-
 }

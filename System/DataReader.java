@@ -449,14 +449,6 @@ public class DataReader extends DataConstants {
 
             newActivity.addStartTime( (String) activity.get(START_TIME) );
             newActivity.addEndTime( (String) activity.get(END_TIME) );
-            
-            // get the ArrayList of notes
-            ArrayList<String> newNotes = new ArrayList<>();
-            JSONArray notes = (JSONArray) activity.get(NOTES);
-            for (int j=0; j<notes.size(); j++)
-                newNotes.add( (String) notes.get(j) );
-            
-            newActivity.addNotes(newNotes);
 
             newActivites.add(newActivity);
         }

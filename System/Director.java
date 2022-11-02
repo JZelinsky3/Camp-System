@@ -1,45 +1,36 @@
 package System;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Director {
-    
-    private ArrayList<Schedule> schedule=new ArrayList<Schedule>();
+public class Director extends User{
+    private ArrayList<String> counselorNames;
 
-    private ArrayList<Price> pricing=new ArrayList<Price>();
-
-    private ArrayList<Capacity> availability=new ArrayList<Capacity>();
-
-    private ArrayList<Expelled> expulsion=new ArrayList<Expelled>();
-
-<<<<<<< HEAD
-    private ArrayList<Scholarships> scholarships=new ArrayList<Scholarships>();
-=======
-    private ArrayList<Scholarship> scholarships=new ArrayList<Scholarship>();
->>>>>>> edf40814e97daf1cf2c3888310f54499101243b3
-
-    public void addCamperSchedule(Schedule schedule){
-
+    public Director(String firstName, String lastName, String userName) {
+        super(firstName, lastName, userName);
+        counselorNames = new ArrayList<>();
     }
 
-    public void addPrice(Price price){
-
+    public boolean verifyCounselor(User counselor) {
+        if(counselor.calculateAge() >= 16) {
+            return true;
+        }
+        return false;
     }
 
-    public void addCapacity(Capacity capacity){
+    public void giveExplusion(Camper camper, String reason) {
+        for (int i = 0; i < campers.size(); i++) {
+            if(campers.get(i) == camper) {
+                camper.giveExpulsion(reason); 
+            }
+        } 
+    } 
 
-    }
-
-    public void addExpelled(Expelled expelled){
-
-    }
-
-    public void removeExpelled(Expelled expelled){
-
-    }
-
-    public void addScholarships(Scholarship scholarships){
-        
+    public String toString() {
+        String print = super.toString()+"\nCounselor names: ";
+        for (int i = 0; i < counselorNames.size(); i++) {
+			if (counselorNames.get(i) != null) {
+                print += counselorNames.get(i)+"\n";
+            }
+		}
+        return print;
     }
 }
