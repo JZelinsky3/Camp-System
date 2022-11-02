@@ -47,14 +47,15 @@ public class CabinList {
         return false;
     }
 
-    public void editCabin(Cabin cabin, int lowCabinAge, int maxCabinAge) {
+    public void editCabin(Cabin cabin, int minCabinAge, int maxCabinAge) {
         for (int i = 0; i < cabins.size(); i++) {
             if(cabins.get(i) == cabin) {
-                cabins.set(i,new Cabin(lowCabinAge, maxCabinAge));
+                cabins.set(i,new Cabin(minCabinAge, maxCabinAge));
             }
         }
     }
 
+    //saves the CabinList
     public void saveCabins() {
         DataWriter.saveCabins();
     } 

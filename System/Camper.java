@@ -18,7 +18,7 @@ public class Camper
     private ArrayList<Contact> guardians;
     private Medical medical;
     private int expulsion;
-    private ArrayList<String> reasonExpulsion;
+    private ArrayList<String> reasonForExpulsion;
     private ArrayList<Session> sessions;
 
     public Camper(String firstName, String lastName, LocalDate birthday)
@@ -28,7 +28,7 @@ public class Camper
         this.address = new ArrayList<Address>();
         this.gender = new ArrayList<Gender>();
         this.medical = medical;
-        reasonExpulsion = new ArrayList<>();
+        reasonForExpulsion = new ArrayList<>();
         sessions = new ArrayList<>();
     }
 
@@ -39,7 +39,7 @@ public class Camper
         this.birthday = birthday;
         emergencyContacts = new ArrayList<>();
         guardians = new ArrayList<>();
-        reasonExpulsion = new ArrayList<>();
+        reasonForExpulsion = new ArrayList<>();
         sessions = new ArrayList<>();
     }
 
@@ -63,8 +63,8 @@ public class Camper
         return this.expulsion;
     }
 
-    public ArrayList<String> getReasonExpulsion() {
-        return this.reasonExpulsion;
+    public ArrayList<String> getReasonForExpulsion() {
+        return this.reasonForExpulsion;
     }
 
     public String getFirstName() {
@@ -104,7 +104,7 @@ public class Camper
     }
 
     public void addExpulsionReason(ArrayList<String> reasons) {
-        this.reasonExpulsion = reasons;
+        this.reasonForExpulsion = reasons;
     }
 
     public void addSessions(ArrayList<Session> sessions) {
@@ -117,7 +117,7 @@ public class Camper
 
     public void giveExpulsion(String reason){
         expulsion++;
-        reasonExpulsion.add(reason);
+        reasonForExpulsion.add(reason);
     }
 
     public String toString(){
@@ -134,9 +134,9 @@ public class Camper
             }
 		}
         print += "\nMedical information: "+this.medical+"\nPExpelled: "+this.expulsion+"Reason for Expulsion: ";
-        for (int i = 0; i < reasonExpulsion.size(); i++) {
-			if (reasonExpulsion.get(i) != null) {
-                print += reasonExpulsion.get(i)+"\n";
+        for (int i = 0; i < reasonForExpulsion.size(); i++) {
+			if (reasonForExpulsion.get(i) != null) {
+                print += reasonForExpulsion.get(i)+"\n";
             }
 		}
         print += "\nSessions: ";
