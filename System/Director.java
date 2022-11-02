@@ -10,7 +10,7 @@ public class Director extends User{
     }
 
     public boolean verifyCounselor(User counselor) {
-        if(counselor.calculateAge() >= 16) {
+        if(counselor.calculateAge() >= 18) {
             return true;
         }
         return false;
