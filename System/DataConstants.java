@@ -22,7 +22,7 @@ public class DataConstants {
 	protected static final String ADDRESS = "address";
 	protected static final String EMERGENCY_CONTACTS = "emergencyContacts";
 	protected static final String GUARDIANS = "guardians";
-	protected static final String MEDICAL = "medicalInfo";
+	protected static final String MEDICAL = "medical";
 	protected static final String DOCTOR = "physician";
 	protected static final String ALLERGIES = "allergies";
 	protected static final String MEDICATIONS = "details";

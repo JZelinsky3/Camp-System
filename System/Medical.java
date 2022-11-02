@@ -1,8 +1,7 @@
 package System;
 import java.util.ArrayList;
-/**
- * Stores medical information on a student
- */
+
+//Stores medical information on a student
 public class Medical {
     private Contact physician;
     private ArrayList <String> allergies;

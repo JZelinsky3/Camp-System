@@ -10,8 +10,12 @@ public class Cabin {
     private int maxCabinAge;
     private int CabinCapacity = 15;
     private ArrayList<Camper> campers;
-    private HashMap<Day, Schedule> schedules; {
+    private HashMap<Day, Schedule> schedules;
 
+    public Cabin(int lowCabinAge, int maxCabinAge) {
+        id = UUID.randomUUID();
+        campers = new ArrayList<>();
+        schedules = new HashMap<Day, Schedule>();
         this.lowCabinAge = lowCabinAge;
         this.maxCabinAge = maxCabinAge;
         Day days[] = {Day.SUNDAY, Day.MONDAY, Day.TUESDAY, Day.WEDNESDAY, Day.THURSDAY, Day.FRIDAY, Day.SATURDAY};
