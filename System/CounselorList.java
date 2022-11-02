@@ -1,29 +1,41 @@
 package System;
-
 import java.util.ArrayList;
 
 public class CounselorList {
-    
-    private ArrayList<Counselor> counselors=new ArrayList<Counselor>();
 
-    private ArrayList<Cabin> cabin= new ArrayList<>();
+    private ArrayList<Counselor> counselors;
+    private static CounselorList counselorList;
 
-    private CounselorList counselorList;
+    private CounselorList() {  
+        counselors = DataReader.getAllCounselors();
+        counselorList = this;
+    }
 
-    public CounselorList getInstance(){
-        counselorList=new CounselorList();
-        counselorList.CounselorList();
+    public static CounselorList getInstance(){
+        if(counselorList == null){
+            counselorList = new CounselorList();
+        }
         return counselorList;
     }
 
-    private void CounselorList() {
+    public Counselor getCounselor(String username){
+        for(Counselor c : counselors){
+            if(username.equals(c.getUserName())){
+                return c;
+            }
+        }
+        return null;
     }
 
-    public void addCounselor(Counselor counselor){
+    public ArrayList<Counselor> getCounselors(){
+        return counselors;
+    }
+
+    public void addCounselor(Counselor counselor) {
         counselors.add(counselor);
     }
 
-    public Counselor getCounselor(Counselor counselor){
-        return counselors.get(counselors.indexOf(counselor));
+    public void saveCounselors(){
+        DataWriter.saveCounselors();
     }
 }

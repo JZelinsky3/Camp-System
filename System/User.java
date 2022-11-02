@@ -17,6 +17,7 @@ public class User {
     protected String phoneNumber;
     protected LocalDate birthday;
     protected String address;
+    protected Type type;
     protected ArrayList<Camper> campers;
 
     public User(String firstName, String lastName, String userName) {
@@ -32,18 +33,62 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getUserName(){
-        return userName;
+    public UUID getId() {
+        return this.id;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getUserName() {
+        return this.userName;
     }
 
     public String getPassword(){
-        return password;
+        return this.password;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
+
+    public LocalDate getBirthday() {
+        return this.birthday;
+    }
+
+    public String getAddress() {
+        return this.address;
+    }
+
+    public Type getType() {
+        return this.type;
+    }
+
+    public ArrayList<Camper> getCampers() {
+        return this.campers;
+    }
+
+    public void addCampers(ArrayList<Camper> campers) {
+        this.campers = campers;
     }
 
     public void addPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
+    public void addPassword(String password){
+        this.password = password;
+    }
+ 
     public void setPassword(String password) {
         this.password = password;
     }
@@ -56,10 +101,6 @@ public class User {
         this.birthday = birthday;
     }
 
-    public void addCampers(ArrayList<Camper> campers) {
-        this.campers = campers;
-    }
-
     public void addCamper(Camper camper) {
         this.campers.add(camper);
     }
@@ -68,19 +109,22 @@ public class User {
         this.address = address;
     }
 
+    public void setType(Type type) {
+        this.type = type;
+    }
+
     protected int calculateAge() {    
         LocalDate currentDate = LocalDate.now();  
         return Period.between(this.birthday, currentDate).getYears();
     }
 
-    public void registerCamper(Camper camper, Session session) {
-        //need more info on method
+    public void enrollCamper(Camper camper) {
         this.campers.add(camper);
     }
 
     public String toString() {
         String print = "Name :"+this.firstName+" "+this.lastName+"\nUsername :"+this.userName+"\nPassword :"+this.password+"\nEmail: "+this.email+
-        "\nPhone Number: "+this.phoneNumber+"\nAddress: "+this.address+"\nType of account: " ;
+        "\nPhone Number: "+this.phoneNumber+"\nAddress: "+this.address+"\nType of account: "+this.type+"\nCampers: ";
         for (int i = 0; i < campers.size(); i++) {
 			if (campers.get(i) != null) {
                 print += campers.get(i)+"\n";
