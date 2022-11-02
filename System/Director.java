@@ -1,36 +1,30 @@
-package System;
 import java.util.ArrayList;
 
-public class Director extends User{
-    private ArrayList<String> counselorNames;
-
-    public Director(String firstName, String lastName, String userName) {
-        super(firstName, lastName, userName);
-        counselorNames = new ArrayList<>();
+public class Director {
+    private ArrayList<Schedule> schedule = new Arraylist<Schedule>();
+    
+    private ArrayList<Price> pricing = new Arraylist<Price>();
+    
+    private ArrayList<Capacity> availability = new Arraylist<Capacity>();
+    
+    private ArrayList<Expelled> expulsion = new Arraylist<Expelled>();
+    
+    private ArrayList<Scholarships> scholarships = new Arraylist<Scholarships>();
+    public void addCamperSchedule(Schedule schedule){
     }
-
-    public boolean verifyCounselor(User counselor) {
-        if(counselor.calculateAge() >= 18) {
-            return true;
-        }
-        return false;
+    
+    public void addPrice(Price price){
     }
-
-    public void giveExplusion(Camper camper, String reason) {
-        for (int i = 0; i < campers.size(); i++) {
-            if(campers.get(i) == camper) {
-                camper.giveExpulsion(reason); 
-            }
-        } 
-    } 
-
-    public String toString() {
-        String print = super.toString()+"\nCounselor names: ";
-        for (int i = 0; i < counselorNames.size(); i++) {
-			if (counselorNames.get(i) != null) {
-                print += counselorNames.get(i)+"\n";
-            }
-		}
-        return print;
+    
+    public void addCapacity(Capacity capacity){
     }
-}
+    
+    public void addExpelled(Expelled expelled){
+    }
+    public void removeExpelled(Expelled expelled){
+    }
+    
+    public void addScholarships(Scholarships scholarships){
+    }
+    
+    }
