@@ -1,5 +1,7 @@
 package System;
-
+/**
+ * Stores information on a medical professional that may need to be contacted incase something happens to a user
+ */
 public class Physician {
     
     private String firstName;
@@ -15,6 +17,6 @@ public class Physician {
     }
 
     public String toString(){
-        return "Name: "+this.firstName+" "+this.lastName+" Phone Number: "+this.phoneNum+" Address: "+this.address;
+        return "Name: "+this.firstName+" "+this.lastName+"\nPhone Number: "+this.phoneNum+"\nAddress: "+this.address;
     }
 }

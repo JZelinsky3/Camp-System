@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.time.LocalTime;
 import java.time.Duration;
 
+/**
+ * The name, time, and location of an activity a user may access
+ */
 public class Activity {
     private String title;
     private String location;

@@ -1,6 +1,9 @@
 package System;
 import java.util.ArrayList;
 
+/**
+ * Lists the activies a user will participate in
+ */
 public class Schedule {
     private ArrayList<Activity> activities;
 

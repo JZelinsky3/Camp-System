@@ -3,12 +3,12 @@ import Items;
 
 public class Camp {
 	private Items items;
-	private Users users;
+	private User users;
 	private User currentUser;
 	
 	public Camp() {
 		items = Items.getInstance();
-		users = Users.getInstance();
+		users = User.getInstance();
 	}
 	
 	//creates a new user account

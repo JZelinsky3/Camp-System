@@ -1,5 +1,7 @@
 package System;
-
+/**
+ * Description of a user
+ */
 public class Bio {
     private String firstName;
     private String lastName;
@@ -16,6 +18,6 @@ public class Bio {
     }
 
     public String toString(){
-        return "Name: "+firstName+" "+lastName+" Date of Birth: "+birthdate+" Gender: "+gender+" Hometown: "+hometown;
+        return "Name: "+firstName+" "+lastName+"\nDate of Birth: "+birthdate+"\nGender: "+gender+"\nHometown: "+hometown;
     }
 }

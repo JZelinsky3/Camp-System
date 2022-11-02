@@ -3,7 +3,9 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
-
+/**
+ * An objects storing a camper's information
+ */
 public class Camper
 {
     private UUID id;
@@ -53,8 +55,14 @@ public class Camper
         return this.guardians;
     }
 
+<<<<<<< HEAD
     public Medical getMedical() {
         return this.medical;
+=======
+    public Medical getMedicalInfo()
+    {
+        return this.medicalInfo;
+>>>>>>> b921703ff7dff3aac75740074accf78f2a86a606
     }
 
     public int getExpulsion() {
@@ -69,8 +77,14 @@ public class Camper
         return firstName;
     }
 
+<<<<<<< HEAD
     public String getLastName() {
         return lastName;
+=======
+    public void setMedicalInfo(Medical medicalInfo)
+    {
+        this.medicalInfo = medicalInfo;
+>>>>>>> b921703ff7dff3aac75740074accf78f2a86a606
     }
 
     public int getAge() {

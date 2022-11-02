@@ -1,5 +1,7 @@
 package System;
-
+/**
+ * Contact information for a user
+ */
 public class Contact {
     //private UUID id;
     private String firstName;
@@ -15,6 +17,6 @@ public class Contact {
     }
 
     public String toString() {
-        return "Name: "+firstName+" "+lastName+" Phone Number: "+phoneNumber+" Relationship: "+relationship;
+        return "Name: "+firstName+" "+lastName+"\nPhone Number: "+phoneNumber+"\nRelationship: "+relationship;
     }
 }
