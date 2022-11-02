@@ -196,14 +196,13 @@ public class CampUI {
     private void addCamper(){
         while(true){
             System.out.print("Enter Campers first name: ");
-            scanner.nextLine();
             String firstName = scanner.nextLine();
             System.out.print("Enter Campers last name: ");
             String lastName = scanner.nextLine();
-            System.out.print("Enter Campers birthday (format: yyyy-mm-dd): ");
+            System.out.print("Enter Campers birthday (format: mm-dd-yyyy): ");
             String birthdayString = scanner.nextLine();
             LocalDate birthday = LocalDate.parse(birthdayString);
-            System.out.println("\nEnter the following information about the EMERGENCY CONTACT:");
+            System.out.println("\nEnter Emergency Contact:");
             Contact emergencyContact = createContact();
 
             Medical medical = getMedical();
@@ -213,7 +212,7 @@ public class CampUI {
                 break;
             }
 
-            System.out.println("\nInvalid input. Start over.");
+            System.out.println("\nInput invalid. Retry.");
         }
     }
 
