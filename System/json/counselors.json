@@ -1,6 +1,9 @@
 [
     {
         "id": "dab0ca20-5b26-11ed-9b6a-0242ac120002",
+        "cabins": [
+            "c9276b46-5b18-11ed-9b6a-0242ac120002"
+        ],
         "firstName": "Tim",
         "lastName": "White",
         "userName": "timw123",
@@ -29,13 +32,13 @@
                     "time": "N/A"
                 }
             ]
-        },
-        "cabins": [
-            "c9276b46-5b18-11ed-9b6a-0242ac120002"
-        ]
+        }
     },
     {
         "id": "dfa6e942-5b26-11ed-9b6a-0242ac120002",
+        "cabins": [
+            "b089a76c-5b1c-11ed-9b6a-0242ac120002"
+        ],
         "firstName": "John",
         "lastName": "Shelby",
         "userName": "john12shelby",
@@ -64,9 +67,6 @@
                     "time": "N/A"
                 }
             ]
-        },
-        "cabins": [
-            "a6890d20-5b1c-11ed-9b6a-0242ac120002"
-        ]
+        }
     }
 ]

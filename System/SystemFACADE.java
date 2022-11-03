@@ -7,19 +7,19 @@ import java.util.ArrayList;
 
 public class SystemFACADE {
     private User currentUser;
-    private SessionList sessions;
+    private UserList users;
     private CounselorList counselors;
     private CamperList campers;
-    private UserList users;
+    private SessionList sessions;
     private CabinList cabins;
     private FileWriter writer;
 
     public SystemFACADE(){
-        sessions = SessionList.getInstance();
         users = UserList.getInstance();
         counselors = CounselorList.getInstance();
         campers = CamperList.getInstance();
         cabins = CabinList.getInstance();
+        sessions = SessionList.getInstance();
     }
 
     public int login(String userName, String password){
@@ -42,6 +42,7 @@ public class SystemFACADE {
         return -1;
     }
 
+    //takes all inputed info to create a user account
     public void createUserAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, LocalDate birthday, String address){
        
         User newUser = new User(firstName, lastName, userName);
@@ -55,6 +56,7 @@ public class SystemFACADE {
         users.addUser(newUser);
     }
 
+    //takes all inputed info to create a counselor account
     public void createCounselorAccount(String userName, String password, String email, String lastName, String firstName, String phoneNumber, LocalDate birthday, String address, String bio, Medical medical){
         
         Counselor newCounselor = new Counselor(firstName, lastName, userName);
@@ -166,7 +168,7 @@ public class SystemFACADE {
         }
     }
 
-    public String getUserInformation(){
+    public String getUserInfo(){
         String info = new String();
         if(currentUser.getCampers().isEmpty()){
             info = "Your account currently has no campers added.\n";
@@ -175,7 +177,7 @@ public class SystemFACADE {
             for(Camper c : currentUser.getCampers()){
                 info += c.getFirstName() + " " + c.getLastName();
                 if(!c.getSessions().isEmpty()){
-                    info += "\n   Registered to the following sessions:\n";
+                    info += "\n   Registered sessions:\n";
                     for(Session s : c.getSessions()){
                         info += "   - " + s.getStartDate() + " - " + s.getEndDate() + ", Theme: " + s.getTheme();
                     }
@@ -195,19 +197,19 @@ public class SystemFACADE {
         return sessionList;
     }
 
-    public void printRoster(int sessionNum){
-        Session session = sessions.getSessions().get(sessionNum - 1);
+    public void printRoster(int sessionNumber){
+        Session session = sessions.getSessions().get(sessionNumber - 1);
         Cabin toPrint = findCounselorsCabin(session);
         File rosterFile = new File("System/txt/directory.txt");
         try{
             rosterFile.createNewFile();
             writer = new FileWriter(rosterFile);
-            writer.write("Campers in your Cabin: ");
+            writer.write("List of Campers in the Cabin: ");
             for(Camper c : toPrint.getCampers()){
                 writer.write("- " + c.getFirstName() + c.getLastName() + ", " + c.getAge());
             }
             writer.close();
-        }catch(IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }
     }
@@ -222,28 +224,28 @@ public class SystemFACADE {
             writer.write("--- Important information for the week of " + session.getStartDate() + " to " + session.getEndDate() + " ---");
             for(Camper c : toPrint.getCampers()){
                 writer.write("- " + c.getFirstName() + c.getLastName() + ":");
-                writer.write("  -> ALLERGIES: " + c.getMedical().getAllergies());
+                writer.write("  -> Alergic to: " + c.getMedical().getAllergies());
                 if(c.getMedical().getAllergies().isEmpty()){
-                    writer.write("      no allergies");
-                }else{
+                    writer.write("      doesn't have any allergies");
+                } else{
                     for(String allergy : c.getMedical().getAllergies()){
                         writer.write("      - " + allergy);
                     }
                 }
-                writer.write("  -> EMERGENCY CONTACTS: ");
+                writer.write("  -> Emergency Contacts: ");
                 for(Contact emergency : c.getEmergencyContacts()){
                     writer.write("      - " + emergency.getFirstName() + " " + emergency.getLastName() + ", " + emergency.getPhoneNumber() + ", " );
                 }
-                writer.write("  -> PHYSICIAN INFORMATION: ");
+                writer.write("  -> Physician Details: ");
                 Contact doc = c.getMedical().getPhysician();
                 writer.write("      - : " + doc.getFirstName() + " " + doc.getLastName() + ", " + doc.getPhoneNumber());
-                writer.write("      - TREATMENTS: ");
+                writer.write("      - Treatments: ");
                 for(Treatment m : c.getMedical().getTreatments()){
                     writer.write("      " + m.getName() + ", " + m.getTime());
                 }
                 writer.close();
             }
-        }catch(IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }
     }
@@ -257,7 +259,7 @@ public class SystemFACADE {
             writer = new FileWriter(scheduleFile);
             writer.write(toPrint.viewSchedules());
             writer.close();
-        }catch(IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }
     }
@@ -265,13 +267,12 @@ public class SystemFACADE {
     private Cabin findCounselorsCabin(Session session){
         Counselor counselor = (Counselor) currentUser;
         for(Cabin c : session.getCabins()){
-            for(Cabin counsCabin : counselor.getCabins()){
-                if(c == counsCabin){
+            for(Cabin counselorCabin : counselor.getCabins()){
+                if(c == counselorCabin){
                     return c;
                 }
             }
         }
         return null;
     }
-
 }

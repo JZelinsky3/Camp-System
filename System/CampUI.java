@@ -269,7 +269,7 @@ public class CampUI {
 
     //general description of the camp
     private void printCampDescription(){
-        String information = systemFac.getUserInformation();
+        String information = systemFac.getUserInfo();
         System.out.println(information);
         ArrayList<Session> avSessions = systemFac.findAvailableSessions();
         System.out.println("The current available sessions: ");

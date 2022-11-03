@@ -1,6 +1,9 @@
 [
     {
         "id": "942f97dc-fac3-48ea-8dad-3360908698fd",
+        "sessions": [
+            "c2fd9164-5b1d-11ed-9b6a-0242ac120002"
+        ],
         "firstName": "Nutella",
         "lastName": "Davis",
         "birthday": "2006-08-22",
@@ -37,13 +40,13 @@
                     "time": "NA"
                 }
             ]
-        },
-        "sessions": [
-            "c2fd9164-5b1d-11ed-9b6a-0242ac120002"
-        ]
+        }
     },
     {
         "id": "cf0bb11c-5b26-11ed-9b6a-0242ac120002",
+        "sessions": [
+            "15307442-5b1e-11ed-9b6a-0242ac120002"
+        ],
         "firstName": "Ben",
         "lastName": "Lee",
         "birthday": "2009-08-15",
@@ -92,9 +95,6 @@
                     "time": "Before Breakfest and Lunch"
                 }
             ]
-        },
-        "sessions": [
-            "15307442-5b1e-11ed-9b6a-0242ac120002"
-        ]
+        }
     }
 ]

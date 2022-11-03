@@ -1,5 +1,6 @@
 [
     {
+    "id": "94381a8a-5b1c-11ed-9b6a-0242ac120002",
     "campers": [],
     "schedules": {
         "MONDAY": [
@@ -316,11 +317,16 @@
                 "title": "Board Games"
             }
         ]
-    },
-    "id": "94381a8a-5b1c-11ed-9b6a-0242ac120002"
+    }
 },
 {
-    "campers": [],
+    "id": "c9276b46-5b18-11ed-9b6a-0242ac120002",
+    "counselor": [
+        "dab0ca20-5b26-11ed-9b6a-0242ac120002"
+    ],
+    "campers": [
+        "cf0bb11c-5b26-11ed-9b6a-0242ac120002"
+    ],
     "schedules": {
         "MONDAY": [
             {
@@ -642,10 +648,10 @@
                 "title": "S'mores"
             }
         ]
-    },
-    "id": "c9276b46-5b18-11ed-9b6a-0242ac120002"
+    }
 },
 {
+    "id": "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
     "campers": [],
     "schedules": {
         "MONDAY": [
@@ -956,10 +962,10 @@
                 "title": "Create Camp Song"
             }
         ]
-    },
-    "id": "9ed270f8-5b1c-11ed-9b6a-0242ac120002"
+    }
 },
 {
+    "id": "a2d84402-5b1c-11ed-9b6a-0242ac120002",
     "campers": [],
     "schedules": {
         "MONDAY": [
@@ -1276,10 +1282,13 @@
                 "title": "Arts and Crafts"
             }
         ]
-    },
-    "id": "a2d84402-5b1c-11ed-9b6a-0242ac120002"
+    }
 },
 {
+    "id": "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+    "counselor": [
+        "dfa6e942-5b26-11ed-9b6a-0242ac120002"
+    ],
     "campers": [],
     "schedules": {
         "MONDAY": [
@@ -1596,10 +1605,10 @@
                 "title": "Board Games"
             }
         ]
-    },
-    "id": "b089a76c-5b1c-11ed-9b6a-0242ac120002"
+    }
 },
 {
+    "id": "a6890d20-5b1c-11ed-9b6a-0242ac120002",
     "campers": [],
     "schedules": {
         "MONDAY": [
@@ -1916,7 +1925,6 @@
                 "title": "Movie Night"
             }
         ]
-    },
-    "id": "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+    }
 }
 ]
