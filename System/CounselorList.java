@@ -1,9 +1,7 @@
 package System;
 import java.util.ArrayList;
 
-/**
- * Stores a list of counselors saved in the system
- */
+//Stores a list of counselors saved in the system
 public class CounselorList {
 
     private ArrayList<Counselor> counselors;
@@ -11,6 +9,9 @@ public class CounselorList {
 
     private CounselorList() {  
         counselors = DataReader.getAllCounselors();
+        if(counselors == null){
+            counselors = new ArrayList<Counselor>();
+        }
         counselorList = this;
     }
 

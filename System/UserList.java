@@ -1,15 +1,18 @@
 package System;
+
 import java.util.ArrayList;
-/**
- * Lists users stored in the system
- */
+
 public class UserList {
+    //Lists users stored in the system
     private ArrayList<User> users;
     private static UserList userList;
 
     private UserList() {
         userList = this;
         users = DataReader.getAllUsers();
+        if(users == null){
+            users = new ArrayList<User>();
+        }
     }
 
     public static UserList getInstance() {
@@ -28,9 +31,8 @@ public class UserList {
         }
         return null;
     }
-    /*
-     * Checks if a user has a given username and returns true if it is and false if it isn't
-     */
+    
+    //Checks if a user has a given username and returns true if it is and false if it isn't
     public boolean hasUser(String userName) {
         for(User user : users)
         {
@@ -57,6 +59,7 @@ public class UserList {
         }
     }
 
+    //Saves the UserList.
     public void saveUsers() {
         DataWriter.saveUsers();
     }    

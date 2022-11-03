@@ -248,8 +248,8 @@ public class SystemFACADE {
         }
     }
 
-    public void printSchedule(int sessionNum){
-        Session session = sessions.getSessions().get(sessionNum - 1);
+    public void printSchedule(int sessionNumber){
+        Session session = sessions.getSessions().get(sessionNumber - 1);
         Cabin toPrint = findCounselorsCabin(session);
         File scheduleFile = new File("System/txt/sched.txt");
         try{
@@ -263,9 +263,9 @@ public class SystemFACADE {
     }
 
     private Cabin findCounselorsCabin(Session session){
-        Counselor couns = (Counselor) currentUser;
+        Counselor counselor = (Counselor) currentUser;
         for(Cabin c : session.getCabins()){
-            for(Cabin counsCabin : couns.getCabins()){
+            for(Cabin counsCabin : counselor.getCabins()){
                 if(c == counsCabin){
                     return c;
                 }

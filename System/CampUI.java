@@ -361,22 +361,22 @@ public class CampUI {
     private void printRoster(){
         System.out.println(systemFac.listSessions());
         System.out.println("");
-        int sessionNum = scanner.nextInt();
-        systemFac.printRoster(sessionNum);
+        int sessionNumber = scanner.nextInt();
+        systemFac.printRoster(sessionNumber);
     }
 
     private void printWeekInfo(){
         System.out.println(systemFac.listSessions());
-        System.out.println("The information for which session do you want printed? Enter session number: ");
-        int sessionNum = scanner.nextInt();
-        systemFac.printWeekInfo(sessionNum);
+        System.out.println("Enter session number for information about that session: ");
+        int sessionNumber = scanner.nextInt();
+        systemFac.printWeekInfo(sessionNumber);
     }
 
     private void printSchedule(){
         System.out.println(systemFac.listSessions());
-        System.out.println("The schedule for which session do you want printed? Enter session number: ");
-        int sessionNum = scanner.nextInt();
-        systemFac.printSchedule(sessionNum);
+        System.out.println("Enter session number for the schedule you wish to be printed: ");
+        int sessionNumber = scanner.nextInt();
+        systemFac.printSchedule(sessionNumber);
     }
     
 
@@ -387,8 +387,8 @@ public class CampUI {
     }
 
     public static void main(String[] args){
-        CampUI ui = new CampUI();
-        ui.run();
+        CampUI campui = new CampUI();
+        campui.run();
     }
     
 }
