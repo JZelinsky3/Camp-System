@@ -22,13 +22,13 @@ public class Cabin {
         this.maxCabinAge = maxCabinAge;
         Day days[] = {Day.MONDAY, Day.TUESDAY, Day.WEDNESDAY, Day.THURSDAY, Day.FRIDAY, Day.SATURDAY, Day.SUNDAY};
         
-        Activity breakf = new Activity("Breakfast", "Cafeteria");
+        Activity breakf = new Activity("Breakfast", "Cafe");
         breakf.addStartTime("09:00");
         breakf.addEndTime("09:45");
-        Activity lunch = new Activity("Lunch", "Cafeteria");
+        Activity lunch = new Activity("Lunch", "Cafe");
         lunch.addStartTime("12:30");
         lunch.addEndTime("13:15");
-        Activity dinner = new Activity("Dinner", "Cafeteria");
+        Activity dinner = new Activity("Dinner", "Cafe");
         dinner.addStartTime("18:30");
         dinner.addEndTime("19:15");
         int number = 0;
