@@ -151,7 +151,7 @@
                     "location": "Auditorium",
                     "startTime": null,
                     "endTime": null,
-                    "title": "Movie"
+                    "title": "Movie Night"
                 }
             ],
             "TUESDAY": [
@@ -165,7 +165,7 @@
                     "location": "Woods",
                     "startTime": null,
                     "endTime": null,
-                    "title": "Hike"
+                    "title": "Hiking"
                 },
                 {
                     "location": "Cafe",
