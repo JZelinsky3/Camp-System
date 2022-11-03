@@ -22,15 +22,15 @@ public class Cabin {
         this.maxCabinAge = maxCabinAge;
         Day days[] = {Day.MONDAY, Day.TUESDAY, Day.WEDNESDAY, Day.THURSDAY, Day.FRIDAY, Day.SATURDAY, Day.SUNDAY};
         
-        Activity breakf = new Activity("Breakfast", "Cafe");
-        breakf.addStartTime("09:00");
-        breakf.addEndTime("09:45");
-        Activity lunch = new Activity("Lunch", "Cafe");
-        lunch.addStartTime("12:30");
-        lunch.addEndTime("13:15");
-        Activity dinner = new Activity("Dinner", "Cafe");
-        dinner.addStartTime("18:30");
-        dinner.addEndTime("19:15");
+        Activity bre = new Activity("Breakfast", "Cafe");
+        bre.addStartTime("09:00");
+        bre.addEndTime("09:45");
+        Activity lun = new Activity("Lunch", "Cafe");
+        lun.addStartTime("12:30");
+        lun.addEndTime("13:15");
+        Activity din = new Activity("Dinner", "Cafe");
+        din.addStartTime("18:30");
+        din.addEndTime("19:15");
         int number = 0;
         Random rand = new Random();
         for (int i = 0; i < 7; i++) {
@@ -77,7 +77,7 @@ public class Cabin {
             template.add(a20);
             ArrayList<Activity> schedule = new ArrayList<Activity>();
 
-            schedule.add(breakf);
+            schedule.add(bre);
 
             number = rand.nextInt(template.size());
             template.get(number).addStartTime("10:15");
@@ -91,7 +91,7 @@ public class Cabin {
             schedule.add(template.get(number));
             template.remove(number);
 
-            schedule.add(lunch);
+            schedule.add(lun);
 
             number = rand.nextInt(template.size());
             template.get(number).addStartTime("13:45");
@@ -105,7 +105,7 @@ public class Cabin {
             schedule.add(template.get(number));
             template.remove(number);
 
-            schedule.add(dinner);
+            schedule.add(din);
 
             number = rand.nextInt(template.size());
             template.get(number).addStartTime("19:45");
@@ -192,7 +192,7 @@ public class Cabin {
     }
 
     public String toString() {
-        String print = "Cabin Age Range: "+this.lowCabinAge+" to "+this.maxCabinAge+"\nMaximum number of campers: "+this.CabinCapacity;
+        String print = "Age Range for Cabin: "+this.lowCabinAge+" to "+this.maxCabinAge+"\nCapacity for Cabin: "+this.CabinCapacity;
         for (int i = 0; i < campers.size(); i++) {
 			if (campers.get(i) != null) {
                 print += campers.get(i)+"\n";
