@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.UUID;
 import java.util.Random;
 
-/**
- * Stores data on the campers, age range, and schedule assigned to a cabin
- */
+//assigns cabins schedule, checks camper age range, and stores activities
 public class Cabin {
     private UUID id;
     private int lowCabinAge;
