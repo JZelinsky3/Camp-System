@@ -168,7 +168,7 @@ public class DataReader extends DataConstants {
         
         try {
             
-            FileReader sessionsReader = new FileReader(SESSION_FILE_NAME);
+            FileReader sessionsReader = new FileReader(SESSIONS_FILE_NAME);
             JSONParser sessionsParser = new JSONParser();
             JSONArray sessionsJSON = (JSONArray) new JSONParser().parse(sessionsReader);
 
@@ -202,7 +202,7 @@ public class DataReader extends DataConstants {
         
         try {
             
-            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
+            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 
@@ -248,7 +248,7 @@ public class DataReader extends DataConstants {
 
         try {
             
-            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
+            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 

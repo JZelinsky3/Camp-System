@@ -3,9 +3,9 @@ package System;
 public class DataConstants { 
 	protected static final String CAMPERS_FILE_NAME = "system/json/campers.json";
 	protected static final String COUNSELORS_FILE_NAME = "system/json/counselors.json";
-	protected static final String SESSION_FILE_NAME = "system/json/sessions.json";
+	protected static final String SESSIONS_FILE_NAME = "system/json/sessions.json";
 	protected static final String USERS_FILE_NAME = "system/json/users.json";
-	protected static final String CABIN_FILE_NAME = "system/json/cabins.json";
+	protected static final String SESSION_FILE_NAME = "system/json/session.json";
 	
 	protected static final String CAMPERS = "campers";
 	protected static final String COUNSELORS = "counselors";
