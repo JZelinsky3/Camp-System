@@ -2,6 +2,9 @@ package System;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+/**
+ * Saves a list of sessions stored in the system
+ */
 public class SessionList {
     private ArrayList<Session> sessions;
     private static SessionList sessionList;

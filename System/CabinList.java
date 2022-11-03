@@ -1,6 +1,9 @@
 package System;
 import java.util.ArrayList;
 
+/**
+ * Stores a list of cabins saved in the system
+ */
 public class CabinList {
     private ArrayList<Cabin> cabins;
     private static CabinList cabinList;

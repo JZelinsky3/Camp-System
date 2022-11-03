@@ -75,6 +75,10 @@ public class Camper
         return lastName;
     }
 
+    /**
+     * Calculates age by comparing the date of birth with the current date
+     * @return
+     */
     public int getAge() {
         return Period.between(birthday, LocalDate.now()).getYears();
     }

@@ -112,12 +112,15 @@ public class User {
     public void setType(Type type) {
         this.type = type;
     }
-
+    
     protected int calculateAge() {    
         LocalDate currentDate = LocalDate.now();  
         return Period.between(this.birthday, currentDate).getYears();
     }
-
+    /**
+     * Add a camper to the list of campers
+     * @param camper
+     */
     public void enrollCamper(Camper camper) {
         this.campers.add(camper);
     }

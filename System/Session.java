@@ -3,6 +3,9 @@ import java.util.UUID;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+/**
+ * Stores data on sessions the camp will be hosting
+ */
 public class Session {
     private UUID id;
     private LocalDate startDate;
