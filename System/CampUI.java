@@ -97,18 +97,17 @@ public class CampUI {
 
     //counselor's menu
     private void counselorMenu(){
-        userMenu();
-        System.out.println("(5) Expell a Camper");
         System.out.println("(6) display directory for cabin");
-        System.out.println("(7) display next weeks info");
+        System.out.println("(7) display weeks info");
         System.out.println("(8) display Schedule");
     }
 
     //director's menu
     private void directorMenu(){
-        userMenu();
         System.out.println("(5) Expell a Camper");
         System.out.println("(6) create new Camp");
+        System.out.println("(7) display weeks info");
+        System.out.println("(8) display Schedule");
     }
 
     private int getUserCommand(int commands){
@@ -335,18 +334,17 @@ public class CampUI {
     private void createCamp(){
         System.out.print("Number of Sessions: ");
         int numberSessions = scanner.nextInt();
+        scanner.nextLine();
         for(int i = 1; i <= numberSessions; i++){
-            System.out.println("Theme of Session " +i+ ": ");
+            System.out.println("Session " +i+ " Theme: ");
             String theme = scanner.nextLine();
-            System.out.println("Description of Session " +i+ ": ");
-            theme += ": " + scanner.nextLine();
             System.out.println("Start date (format: yyyy-mm-dd): ");
             String start = scanner.nextLine();
             LocalDate startDate = LocalDate.parse(start);
             System.out.println("End date (format yyyy-mm-dd): ");
             String end = scanner.nextLine();
             LocalDate endDate = LocalDate.parse(end);
-            systemFac.createSession(startDate, endDate, theme);
+            systemFac.createSession(theme, startDate, endDate);
         }
         System.out.println("Number of Cabins: ");
         int numberCabins = scanner.nextInt();

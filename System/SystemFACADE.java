@@ -153,7 +153,7 @@ public class SystemFACADE {
         camper.giveExpulsion(reason);
     }
 
-    public void createSession(LocalDate start, LocalDate end, String theme){
+    public void createSession(String theme, LocalDate start, LocalDate end){
         Session session = new Session(start, end);
         session.addTheme(theme);
         sessions.addSession(session);
@@ -273,4 +273,5 @@ public class SystemFACADE {
         }
         return null;
     }
+
 }
