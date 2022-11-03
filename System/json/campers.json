@@ -97,7 +97,7 @@
             "allergies": [
                 "Pollen"
             ],
-            "medications": [
+            "treatments": [
                 {
                     "name": "Benadryl",
                     "description": "Take will water",

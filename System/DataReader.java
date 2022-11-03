@@ -202,7 +202,7 @@ public class DataReader extends DataConstants {
         
         try {
             
-            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
+            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 
@@ -211,7 +211,8 @@ public class DataReader extends DataConstants {
 
                 Cabin newCabin = new Cabin(
                     UUID.fromString((String) cabin.get(USER_ID)), 
-                    ((Long) cabin.get(CABIN_AGE)).intValue());
+                    ((Long) cabin.get(LOW_CABIN_AGE)).intValue(),
+                    ((Long) cabin.get(MAX_CABIN_AGE)).intValue());
 
                 newCabin.addMaxCapacity( ((Long) cabin.get(CABIN_CAPACITY)).intValue() );
 
@@ -247,7 +248,7 @@ public class DataReader extends DataConstants {
 
         try {
             
-            FileReader cabinsReader = new FileReader(SESSION_FILE_NAME);
+            FileReader cabinsReader = new FileReader(CABIN_FILE_NAME);
             JSONParser cabinsParser = new JSONParser();
             JSONArray cabinsJSON = (JSONArray) new JSONParser().parse(cabinsReader);
 

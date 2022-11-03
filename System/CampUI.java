@@ -194,32 +194,32 @@ public class CampUI {
 
     //adds camper to users account
     private void addCamper(){
-        while(true){
-            System.out.print("Enter Campers first name: ");
-            String firstName = scanner.nextLine();
-            System.out.print("Enter Campers last name: ");
-            String lastName = scanner.nextLine();
-            System.out.print("Enter Campers birthday (format: mm-dd-yyyy): ");
-            String birthdayString = scanner.nextLine();
-            LocalDate birthday = LocalDate.parse(birthdayString);
-            System.out.println("\nEnter Emergency Contact:");
+        System.out.print("Campers first name: ");
+        scanner.nextLine();
+        String firstName = scanner.nextLine();
+        System.out.print("Campers last name: ");
+        String lastName = scanner.nextLine();
+        System.out.print("Campers birthday (format: yyyy-mm-dd): ");
+        String birthdayString = scanner.nextLine();
+        LocalDate birthday = LocalDate.parse(birthdayString);
+        String yn = "y";
+        ArrayList<Contact> emergencyContacts = new ArrayList<Contact>();
+        while(yn.equalsIgnoreCase("y")){
+            System.out.println("\nEnter the Emergency Contact's information:");
             Contact emergencyContact = createContact();
-
-            Medical medical = getMedical();
-
-            if(systemFac.addCamper(firstName, lastName, birthday, emergencyContact, medical) == true){
-                System.out.println(firstName + " " + lastName+ " has been successfully signed up as a Camper");
-                break;
-            }
-
-            System.out.println("\nInput invalid. Retry.");
+            emergencyContacts.add(emergencyContact);
+            System.out.println("Is there another Emergency Contact? (Yes/No)");
+            yn = scanner.nextLine();
         }
-    }
+
+        Medical medical = getMedical();
+
+        }
 
     private Medical getMedical(){
         System.out.println("\nEnter the Physician's information");
         Contact physicianContact = createContact();
-        System.out.println("Does the camper take any treatments? Y/N");
+        System.out.println("Does the camper take any treatments? Yes/No");
         String yn = scanner.nextLine();
         ArrayList<Treatment> treatments = new ArrayList<Treatment>();
         while(yn.equalsIgnoreCase("y")){
@@ -227,22 +227,22 @@ public class CampUI {
             String treatName = scanner.nextLine();
             System.out.println("");
             String treatDescription = scanner.nextLine();
-            System.out.println("What time of day does the medicine have to be taken?");
+            System.out.println("When does the medicine have to be taken?");
             String treatTime = scanner.nextLine();
             Treatment treatment = new Treatment(treatName, treatDescription, treatTime);
             treatments.add(treatment);
-            System.out.println("\nDo you want to add another medication? (Y/N)");
+            System.out.println("\nDo you want to add another treatment? (Yes/No)");
             yn = scanner.nextLine();
         }
         //adding allergies
-        System.out.println("\nDoes the camper have any allergies? (Y/N)");
+        System.out.println("\nDoes the camper have any allergies? (Yes/No)");
         yn = scanner.nextLine();
         ArrayList<String> allergies = new ArrayList<String>();
         while(yn.equalsIgnoreCase("y")){
             System.out.println("\nWhat is the camper allergic to?");
             String allergy = scanner.nextLine();
             allergies.add(allergy);
-            System.out.println("\nDo you wish to add another? (Y/N)");
+            System.out.println("\nDo you wish to add another? (Yes/No)");
             yn = scanner.nextLine();
         }
         Medical medical = new Medical(physicianContact);
@@ -340,10 +340,10 @@ public class CampUI {
             String theme = scanner.nextLine();
             System.out.println("Description of Session " +i+ ": ");
             theme += ": " + scanner.nextLine();
-            System.out.println("Start date (format: mm-dd-yyyy): ");
+            System.out.println("Start date (format: yyyy-mm-dd): ");
             String start = scanner.nextLine();
             LocalDate startDate = LocalDate.parse(start);
-            System.out.println("End date (format mm-dd-yyyy): ");
+            System.out.println("End date (format yyyy-mm-dd): ");
             String end = scanner.nextLine();
             LocalDate endDate = LocalDate.parse(end);
             systemFac.createSession(startDate, endDate, theme);

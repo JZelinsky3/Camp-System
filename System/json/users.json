@@ -5,11 +5,11 @@
         "lastName": "Barret",
         "password": "RachB445",
         "phoneNumber": "771-912-4521",
-        "address": "",
+        "address": "91 Elizabeth Street, Barberton, OH 44203",
         "campers": [
-            ""
+            "942f97dc-fac3-48ea-8dad-3360908698fd"
         ],
-        "id": "",
+        "id": "e5de0600-5b27-11ed-9b6a-0242ac120002",
         "userName": "rachelBrocks12",
         "type": "PARENT",
         "email": "barretrach123@icloud.com"
@@ -20,9 +20,9 @@
         "lastName": "Johnson",
         "password": "pJohn432",
         "phoneNumber": "467-591-4376",
-        "address": "",
+        "address": "96 N. Wagon Drive, Minneapolis, MN 55406",
         "campers": [],
-        "id": "",
+        "id": "e9edd73e-5b27-11ed-9b6a-0242ac120002",
         "userName": "PJohnson1",
         "type": "PARENT",
         "email": "pjohnson1@gmail.com"
@@ -33,9 +33,9 @@
         "lastName": "Jones",
         "password": null,
         "phoneNumber": "281-330-8004",
-        "address": "",
+        "address": "61 Riverview Drive, Taunton, MA 02780",
         "campers": [],
-        "id": "",
+        "id": "ee834644-5b27-11ed-9b6a-0242ac120002",
         "userName": null,
         "type": "DIRECTOR",
         "email": "mikejones@gmail.com"

@@ -32,7 +32,7 @@ public class DataWriter extends DataConstants {
             jsonUsers.add(getUserJSON(user));
         }
 
-        //  Write JSON file
+        //write JSON file
         try (FileWriter file = new FileWriter(USERS_FILE_NAME)) {
             file.write(jsonUsers.toJSONString());
             file.flush();
@@ -43,26 +43,26 @@ public class DataWriter extends DataConstants {
     }
 
     private static JSONObject getUserJSON(User user) {
-        JSONObject userDetails = new JSONObject();
+        JSONObject userDet = new JSONObject();
 
-		userDetails.put(USER_ID, user.getId().toString());
-		userDetails.put(FIRST_NAME, user.getFirstName());
-		userDetails.put(LAST_NAME, user.getLastName());
-		userDetails.put(USERNAME, user.getUserName());
-		userDetails.put(PASSWORD, user.getPassword());
-		userDetails.put(EMAIL, user.getEmail());
-		userDetails.put(PHONE_NUMBER, user.getPhoneNumber());
-		userDetails.put(BIRTHDAY, user.getBirthday().toString());
-		userDetails.put(ADDRESS, user.getAddress());
-		userDetails.put(TYPE, user.getType().toString());
+		userDet.put(USER_ID, user.getId().toString());
+		userDet.put(FIRST_NAME, user.getFirstName());
+		userDet.put(LAST_NAME, user.getLastName());
+		userDet.put(USERNAME, user.getUserName());
+		userDet.put(PASSWORD, user.getPassword());
+		userDet.put(EMAIL, user.getEmail());
+		userDet.put(PHONE_NUMBER, user.getPhoneNumber());
+		userDet.put(BIRTHDAY, user.getBirthday().toString());
+		userDet.put(ADDRESS, user.getAddress());
+		userDet.put(TYPE, user.getType().toString());
 		
         JSONArray jsonCampers = new JSONArray();
         ArrayList<Camper> campers = user.getCampers();
         for (Camper camper : campers)
             jsonCampers.add(camper.getUUID().toString());
-        userDetails.put(CAMPERS, jsonCampers);
+        userDet.put(CAMPERS, jsonCampers);
         
-        return userDetails;
+        return userDet;
     }
 
     public static void saveCounselors() {

@@ -20,12 +20,13 @@
                 "address": "1800 Norwich Lane, Saint Louis, MD 63101"
             },
             "allergies": [
-                "NA"
+                "N/A"
             ],
             "treatments": [
                 {
-                    "description": "NA",
-                    "time": "NA"
+                    "name": "N/A",
+                    "description": "N/A",
+                    "time": "N/A"
                 }
             ]
         },
@@ -54,12 +55,13 @@
                 "address": "958 Myrtle Lane, Upper Marlboro, MD 20772"
             },
             "allergies": [
-                "NA"
+                "N/A"
             ],
-            "medications": [
+            "treatments": [
                 {
-                    "description": "NA",
-                    "time": "NA"
+                    "name": "N/A",
+                    "description": "N/A",
+                    "time": "N/A"
                 }
             ]
         },

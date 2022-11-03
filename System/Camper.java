@@ -1,11 +1,11 @@
 package System;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
-/**
- * An objects storing a camper's information
- */
+
+//storing a camper's information
 public class Camper
 {
     private UUID id;
@@ -21,14 +21,14 @@ public class Camper
     private ArrayList<String> reasonForExpulsion;
     private ArrayList<Session> sessions;
 
-    public Camper(String firstName, String lastName, LocalDate birthday)
-    {
-        this.id = UUID.randomUUID();
+    public Camper(String firstName, String lastName, LocalDate birthday){
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.birthday = birthday;
-        this.address = new ArrayList<Address>();
-        this.gender = new ArrayList<Gender>();
-        this.medical = medical;
-        reasonForExpulsion = new ArrayList<>();
+        id = UUID.randomUUID();
+        emergencyContacts = new ArrayList<>();
+        guardians = new ArrayList<>();
+        reasonForExpulsion= new ArrayList<>();
         sessions = new ArrayList<>();
     }
 
@@ -75,10 +75,6 @@ public class Camper
         return lastName;
     }
 
-    /**
-     * Calculates age by comparing the date of birth with the current date
-     * @return
-     */
     public int getAge() {
         return Period.between(birthday, LocalDate.now()).getYears();
     }

@@ -1,8 +1,8 @@
 [
         {
             "spotsLeft": 90,
-            "startDate": "07-02-2023",
-            "endDate": "07-09-2023",
+            "startDate": "2023-07-02",
+            "endDate": "2023-07-09",
             "theme": "Star Wars",
             "id": "c2fd9164-5b1d-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -16,8 +16,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "07-09-2023",
-            "endDate": "07-16-2023",
+            "startDate": "2023-07-09",
+            "endDate": "2023-07-16",
             "theme": "Rockstars",
             "id": "d3daab70-5b1d-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -31,8 +31,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "07-16-2023",
-            "endDate": "07-23-2023",
+            "startDate": "2023-07-16",
+            "endDate": "2023-07-23",
             "theme": "Ninja Warrior",
             "id": "f3ab7d30-5b1d-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -46,8 +46,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "07-23-2023",
-            "endDate": "07-30-2023",
+            "startDate": "2023-07-23",
+            "endDate": "2023-07-30",
             "theme": "The Great Outdoors",
             "id": "05947826-5b1e-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -61,8 +61,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "07-30-2023",
-            "endDate": "08-06-2023",
+            "startDate": "2023-07-30",
+            "endDate": "2023-08-06",
             "theme": "California",
             "id": "0eed42b8-5b1e-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -76,8 +76,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "08-06-2023",
-            "endDate": "08-13-2023",
+            "startDate": "2023-08-06",
+            "endDate": "2023-08-13",
             "theme": "Beach",
             "id": "f8e6d3da-5b1d-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -91,8 +91,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "08-13-2023",
-            "endDate": "08-20-2023",
+            "startDate": "2023-08-13",
+            "endDate": "2023-08-20",
             "theme": "Miami",
             "id": "0069ed04-5b1e-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -106,8 +106,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "08-20-2023",
-            "endDate": "08-27-2023",
+            "startDate": "2023-08-20",
+            "endDate": "2023-08-27",
             "theme": "Superheroes",
             "id": "da0b06a2-5b1d-11ed-9b6a-0242ac120002",
             "cabins": [
@@ -121,8 +121,8 @@
         },
         {
             "availableSpots": 90,
-            "startDate": "08-27-2022",
-            "endDate": "09-03-2023",
+            "startDate": "2023-08-27",
+            "endDate": "2023-09-03",
             "theme": "Cooking",
             "id": "15307442-5b1e-11ed-9b6a-0242ac120002",
             "cabins": [
