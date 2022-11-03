@@ -125,6 +125,9 @@ public class Cabin {
         schedules = new HashMap<>();
     }
 
+    public Cabin(UUID fromString, int intValue) {
+    }
+
     public UUID getUUID() {
         return id;
     }
