@@ -14,8 +14,8 @@ public class DataReader extends DataConstants {
 
     private static ArrayList<User> users;
     private static ArrayList<Counselor> counselors;
-    private static ArrayList<Session> sessions;
     private static ArrayList<Camper> campers;
+    private static ArrayList<Session> sessions;
 
     public static void main(String[] args) {
         ArrayList<Session> us = getAllSessions();;
@@ -388,7 +388,8 @@ public class DataReader extends DataConstants {
         Contact doc = new Contact(
             (String) physician.get(FIRST_NAME), 
             (String) physician.get(LAST_NAME), 
-            (String) physician.get(PHONE_NUMBER));
+            (String) physician.get(PHONE_NUMBER),
+            (String) physician.get(ADDRESS));
 
         ArrayList<String> newAllergies = new ArrayList<>();
         JSONArray allergies = (JSONArray) medical.get(ALLERGIES);
@@ -424,7 +425,8 @@ public class DataReader extends DataConstants {
             Contact newContact = new Contact(
                 (String) contact.get(FIRST_NAME), 
                 (String) contact.get(LAST_NAME), 
-                (String) contact.get(PHONE_NUMBER));
+                (String) contact.get(PHONE_NUMBER),
+                (String) contact.get(RELATIONSHIP));
 
             contactsList.add(newContact);
         }

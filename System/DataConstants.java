@@ -10,6 +10,7 @@ public class DataConstants {
 	protected static final String COUNSELORS = "counselors";
 	protected static final String PARENTS = "parents";
 	protected static final String DIRECTOR = "director";
+	protected static final String CABINS = "cabins";
 	
 	protected static final String USER_ID = "id";
 	protected static final String FIRST_NAME = "firstName";
@@ -22,6 +23,7 @@ public class DataConstants {
 	protected static final String ADDRESS = "address";
 	protected static final String TYPE = "type";
 	protected static final String EMERGENCY_CONTACTS = "emergencyContacts";
+	protected static final String RELATIONSHIP = "relationship";
 	protected static final String GUARDIANS = "guardians";
 	protected static final String MEDICAL = "medical";
 	protected static final String PHYSICIAN = "physician";
@@ -37,7 +39,7 @@ public class DataConstants {
 	protected static final String AGE_GROUP = "ageGroup";
 	protected static final String SPOTS_LEFT = "spotsLeft";
 	protected static final String THEME = "theme";
-	protected static final String CABINS = "cabins";
+	protected static final String CABIN_AGE = "cabinAge";
 	protected static final String LOW_CABIN_AGE = "lowCabinAge";
 	protected static final String MAX_CABIN_AGE = "maxCabinAge";
 	protected static final String CABIN_CAPACITY = "cabinCapacity";
