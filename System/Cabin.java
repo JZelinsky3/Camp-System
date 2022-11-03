@@ -80,14 +80,8 @@ public class Cabin {
             schedule.add(bre);
 
             number = rand.nextInt(template.size());
-            template.get(number).addStartTime("10:15");
-            template.get(number).addEndTime("11:00");
-            schedule.add(template.get(number));
-            template.remove(number);
-
-            number = rand.nextInt(template.size());
-            template.get(number).addStartTime("11:30");
-            template.get(number).addEndTime("12:15");
+            template.get(number).addStartTime("10:30");
+            template.get(number).addEndTime("12:00");
             schedule.add(template.get(number));
             template.remove(number);
 

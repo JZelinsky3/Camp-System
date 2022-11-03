@@ -16,6 +16,7 @@ public class DataReader extends DataConstants {
     private static ArrayList<Counselor> counselors;
     private static ArrayList<Camper> campers;
     private static ArrayList<Session> sessions;
+    private static ArrayList<Cabin> cabins;
 
     public static void main(String[] args) {
         ArrayList<Session> us = getAllSessions();;
@@ -153,7 +154,9 @@ public class DataReader extends DataConstants {
                 campers.get(i).addSessions(newSessions);
             }
 
-        } catch (Exception e) {
+        }
+    } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 

@@ -1,448 +1,137 @@
 [
-    {
-        "id": "",
-        "startDate": "2022-07-02",
-        "endDate": "2022-07-09",
-        "spotsLeft": 9,
-        "theme": "outdoors week",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-07-09",
-        "endDate": "2022-07-16",
-        "spotsLeft": 9,
-        "theme": "team-building week",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-07-16",
-        "endDate": "2022-07-23",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-07-23",
-        "endDate": "2022-07-30",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-07-30",
-        "endDate": "2022-08-06",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-08-06",
-        "endDate": "2022-07-13",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-08-13",
-        "endDate": "2022-08-20",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-08-20",
-        "endDate": "2022-08-27",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "id": "",
-        "startDate": "2022-08-27",
-        "endDate": "2022-09-02",
-        "spotsLeft": 9,
-        "theme": "",
-        "cabins": [
-            ""
-        ],
-        "lowCabinAge": 1,
-        "maxCabinAge": 1
-    },
-    {
-        "campers": [],
-        "schedules": {
-            "MONDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Baseball"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Obstacle Course"
-                },
-                {
-                    "location": "Pool",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Pool Fun"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Auditorium",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Movie Night"
-                }
-            ],
-            "TUESDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast Buffet"
-                },
-                {
-                    "location": "Woods",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Hiking"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "Field House",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Basketball"
-                },
-                {
-                    "location": "Pool",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Swimming Time"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Campfire",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Create Camp Song"
-                }
-            ],
-            "WEDNESDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Capture the Flag"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "River",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Tubing"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "DIY Kites"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Campfire",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "S'mores"
-                }
-            ],
-            "THURSDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Arts and Crafts"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Volleyball"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Potato Sack Relay"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner Buffet"
-                },
-                {
-                    "location": "Campfire",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Story Telling"
-                }
-            ],
-            "FRIDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Tug of War"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Make Tye-dye Shirts"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Ultimate Frisbee"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Making Bird Feeders"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Movie Night"
-                }
-            ],
-            "SATURDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "Woods",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Hiking"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch Buffet"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Archery"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Talent Show"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Scavenger Hunt"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Hide and Seek"
-                }
-            ],
-            "SUNDAY": [
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Breakfast"
-                },
-                {
-                    "location": "River",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Fishing"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Relay Race"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Lunch"
-                },
-                {
-                    "location": "River",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Kayaking"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Water Balloon Fight"
-                },
-                {
-                    "location": "Backyard",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Horseback Riding"
-                },
-                {
-                    "location": "Cafe",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Dinner"
-                },
-                {
-                    "location": "Rec Hall",
-                    "startTime": null,
-                    "endTime": null,
-                    "title": "Board Games"
-                }
+        {
+            "spotsLeft": 90,
+            "startDate": "07-02-2023",
+            "endDate": "07-09-2023",
+            "theme": "Star Wars",
+            "id": "c2fd9164-5b1d-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
             ]
         },
-        "id": ""
+        {
+            "availableSpots": 90,
+            "startDate": "07-09-2023",
+            "endDate": "07-16-2023",
+            "theme": "Rockstars",
+            "id": "d3daab70-5b1d-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "07-16-2023",
+            "endDate": "07-23-2023",
+            "theme": "Ninja Warrior",
+            "id": "f3ab7d30-5b1d-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "07-23-2023",
+            "endDate": "07-30-2023",
+            "theme": "The Great Outdoors",
+            "id": "05947826-5b1e-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "07-30-2023",
+            "endDate": "08-06-2023",
+            "theme": "California",
+            "id": "0eed42b8-5b1e-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "08-06-2023",
+            "endDate": "08-13-2023",
+            "theme": "Beach",
+            "id": "f8e6d3da-5b1d-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "08-13-2023",
+            "endDate": "08-20-2023",
+            "theme": "Miami",
+            "id": "0069ed04-5b1e-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "08-20-2023",
+            "endDate": "08-27-2023",
+            "theme": "Superheroes",
+            "id": "da0b06a2-5b1d-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
+        },
+        {
+            "availableSpots": 90,
+            "startDate": "08-27-2022",
+            "endDate": "09-03-2023",
+            "theme": "Cooking",
+            "id": "15307442-5b1e-11ed-9b6a-0242ac120002",
+            "cabins": [
+                "c9276b46-5b18-11ed-9b6a-0242ac120002",
+                "94381a8a-5b1c-11ed-9b6a-0242ac120002",
+                "9ed270f8-5b1c-11ed-9b6a-0242ac120002",
+                "a2d84402-5b1c-11ed-9b6a-0242ac120002",
+                "b089a76c-5b1c-11ed-9b6a-0242ac120002",
+                "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+            ]
     }
 ]

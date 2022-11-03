@@ -51,11 +51,11 @@
             ]
         },
         "sessions": [
-            ""
+            "c2fd9164-5b1d-11ed-9b6a-0242ac120002"
         ]
     },
     {
-        "id": "",
+        "id": "cf0bb11c-5b26-11ed-9b6a-0242ac120002",
         "firstName": "Ben",
         "lastName": "Lee",
         "birthday": "2009-08-15",
@@ -106,7 +106,7 @@
             ]
         },
         "sessions": [
-            ""
+            "15307442-5b1e-11ed-9b6a-0242ac120002"
         ]
     }
 ]

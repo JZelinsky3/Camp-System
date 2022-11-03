@@ -245,10 +245,10 @@ public class CampUI {
             System.out.println("\nDo you wish to add another? (Y/N)");
             yn = scanner.nextLine();
         }
-        Medical medicalInfo = new Medical(physicianContact);
-        medicalInfo.addAllergies(allergies);
-        medicalInfo.addTreatments(treatments);
-        return medicalInfo;
+        Medical medical = new Medical(physicianContact);
+        medical.addAllergies(allergies);
+        medical.addTreatments(treatments);
+        return medical;
     }
 
     //creates a new contact 
@@ -280,7 +280,6 @@ public class CampUI {
         System.out.println("> The address of the camp is: 100 National Park Rd, Hopkins, SC 29061 ");
         System.out.println("> The camps phone number is \"887-549-7361\"");
         System.out.println("> The camps email is \"campcongaree@gmail.com \".");
-        System.out.println("> ");
         System.out.println("> Camp Congaree is located next door to Congaree National Park. Includes hiking trails, rivers, and lots more!");
     }
    

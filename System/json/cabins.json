@@ -1,0 +1,1922 @@
+[
+    {
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Baseball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Obstacle Course"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Pool Fun"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Auditorium",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Field House",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Basketball"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Capture the Flag"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "DIY Kites"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Volleyball"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Potato Sack Relay"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Tug of War"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Make Tye-dye Shirts"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Ultimate Frisbee"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Archery"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Talent Show"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "River",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Fishing"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Relay Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Kayaking"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Balloon Fight"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Board Games"
+            }
+        ]
+    },
+    "id": "94381a8a-5b1c-11ed-9b6a-0242ac120002"
+},
+{
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "River",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Cliff Jumping"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Obstacle Course"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Archery"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Archery"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Guest Speaker"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "River",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Fishing"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Relay Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Kayaking"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Balloon Fight"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Card Games"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Volleyball"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Relays"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Bird Watching"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Make Tye-dye Shirts"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Ultimate Frisbee"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Field House",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tennis"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Capture the Flag"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "History of the Area"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ]
+    },
+    "id": "c9276b46-5b18-11ed-9b6a-0242ac120002"
+},
+{
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Beach Volleyball"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Potato Sack Relay"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Field House",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Basketball"
+            },
+            {
+                "location": "River",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "River Fun"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Capture the Flag"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "DIY Kites"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Scary Stories"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Kickball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Obstacle Course"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Pool Fun"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Auditorium",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Stick Collecting"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Ultimate Frisbee"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Board Games"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Archery"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Magic Show"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Archery"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Field House",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Basketball"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ]
+    },
+    "id": "9ed270f8-5b1c-11ed-9b6a-0242ac120002"
+},
+{
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Baseball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Obstacle Course"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Pool Fun"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Watergun Fight"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "DIY Crafts"
+            },
+            {
+                "location": "River",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Kayaking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Capture the Football"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "DIY Kites"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Dodgeball"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Potato Sack Relay"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Tug of War"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Make Tye-dye Shirts"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Frisbee Golf"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Archery"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Baking Treats"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Walk"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Math Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Maze"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Arts and Crafts"
+            }
+        ]
+    },
+    "id": "a2d84402-5b1c-11ed-9b6a-0242ac120002"
+},
+{
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Relay Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Talent Show"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Balloon Fight"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Make Tye-dye Shirts"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Field House",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Basketball"
+            },
+            {
+                "location": "Pool",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Capture the Flag"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tubing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "DIY Kites"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Volleyball"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Potato Sack Relay"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Tug of War"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Make Tye-dye Shirts"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Ultimate Frisbee"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Card Games"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Baseball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Capture the Football"
+            },
+            {
+                "location": "River",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Tubing"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Auditorium",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "River",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Fishing"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Relay Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Kayaking"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Balloon Fight"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Board Games"
+            }
+        ]
+    },
+    "id": "b089a76c-5b1c-11ed-9b6a-0242ac120002"
+},
+{
+    "campers": [],
+    "schedules": {
+        "MONDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Baseball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Capture the Flag"
+            },
+            {
+                "location": "River",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Tubing"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Auditorium",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ],
+        "TUESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Hiking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "DIY Kites"
+            },
+            {
+                "location": "River",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Kayaking"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "S'mores"
+            }
+        ],
+        "WEDNESDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Volleyball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Fishing"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Arts and Crafts"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Story Telling"
+            }
+        ],
+        "THURSDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Field House",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Basketball"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Tug of War"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Potato Sack Relay"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Campfire",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Create Camp Song"
+            }
+        ],
+        "FRIDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Relay Race"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Talent Show"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Water Balloon Fight"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Make Tye-dye Shirts"
+            }
+        ],
+        "SATURDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "Woods",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "Scavenger Hunt"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Ultimate Frisbee"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Board Games"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Hide and Seek"
+            }
+        ],
+        "SUNDAY": [
+            {
+                "location": "Cafe",
+                "startTime": "9:00",
+                "endTime": "9:45",
+                "title": "Breakfast"
+            },
+            {
+                "location": "River",
+                "startTime": "10:30",
+                "endTime": "12:00",
+                "title": "River Fun"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "12:30",
+                "endTime": "13:50",
+                "title": "Obstacle Course"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "12:30",
+                "endTime": "13:15",
+                "title": "Lunch"
+            },
+            {
+                "location": "River",
+                "startTime": "13:45",
+                "endTime": "15:30",
+                "title": "Swimming Time"
+            },
+            {
+                "location": "Backyard",
+                "startTime": "16:00",
+                "endTime": "18:00",
+                "title": "Archery"
+            },
+            {
+                "location": "Cafe",
+                "startTime": "18:30",
+                "endTime": "19:15",
+                "title": "Dinner"
+            },
+            {
+                "location": "Rec Hall",
+                "startTime": "19:45",
+                "endTime": "21:15",
+                "title": "Movie Night"
+            }
+        ]
+    },
+    "id": "a6890d20-5b1c-11ed-9b6a-0242ac120002"
+}
+]
