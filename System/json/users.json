@@ -1,43 +1,43 @@
 [
     {
-        "birthday": "1988-05-05",
+        "id": "e5de0600-5b27-11ed-9b6a-0242ac120002",
         "firstName": "Rachel",
         "lastName": "Barret",
+        "userName": "rachelBrocks12",
         "password": "RachB445",
+        "email": "barretrach123@icloud.com",
         "phoneNumber": "771-912-4521",
+        "birthday": "1988-05-05",
         "address": "91 Elizabeth Street, Barberton, OH 44203",
+        "type": "PARENT",
         "campers": [
             "942f97dc-fac3-48ea-8dad-3360908698fd"
-        ],
-        "id": "e5de0600-5b27-11ed-9b6a-0242ac120002",
-        "userName": "rachelBrocks12",
-        "type": "PARENT",
-        "email": "barretrach123@icloud.com"
+        ]
     },
     {
-        "birthday": "1985-10-02",
+        "id": "e9edd73e-5b27-11ed-9b6a-0242ac120002",
         "firstName": "Pedro",
         "lastName": "Johnson",
-        "password": "pJohn432",
-        "phoneNumber": "467-591-4376",
-        "address": "96 N. Wagon Drive, Minneapolis, MN 55406",
-        "campers": [],
-        "id": "e9edd73e-5b27-11ed-9b6a-0242ac120002",
         "userName": "PJohnson1",
+        "password": "pJohn432",
+        "email": "pjohnson1@gmail.com",
+        "phoneNumber": "467-591-4376",
+        "birthday": "1985-10-02",
+        "address": "96 N. Wagon Drive, Minneapolis, MN 55406",
         "type": "PARENT",
-        "email": "pjohnson1@gmail.com"
+        "campers": []
     },
     {
+        "id": "ee834644-5b27-11ed-9b6a-0242ac120002",
         "birthday": "1980-01-25",
         "firstName": "Mike",
         "lastName": "Jones",
-        "password": null,
+        "userName": "Mike",
+        "password": "Mike123",
+        "email": "mikejones@gmail.com",
         "phoneNumber": "281-330-8004",
         "address": "61 Riverview Drive, Taunton, MA 02780",
-        "campers": [],
-        "id": "ee834644-5b27-11ed-9b6a-0242ac120002",
-        "userName": null,
         "type": "DIRECTOR",
-        "email": "mikejones@gmail.com"
+        "campers": []
     }
 ]
