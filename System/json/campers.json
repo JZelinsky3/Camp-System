@@ -1,35 +1,23 @@
 [
     {
         "id": "942f97dc-fac3-48ea-8dad-3360908698fd",
-        "firstName": "Tina",
-        "lastName": "Kelly",
+        "firstName": "Nutella",
+        "lastName": "Davis",
         "birthday": "2006-08-22",
         "emergencyContacts": [
             {
-                "firstName": "Carter",
-                "lastName": "Hart",
-                "phoneNumber": "218-888-5421",
-                "address": "291 Lake View Drive, Greensburg, PA 15601"
-            },
-            {
-                "firstName": "Tom",
-                "lastName": "Jones",
-                "phoneNumber": "887-927-4551",
-                "address": "916 Leatherwood Road, Morgantown, WV 26508"
+                "firstName": "Levaeh",
+                "lastName": "Davis",
+                "phoneNumber": "771-912-4521",
+                "address": "91 Elizabeth Street, Barberton, OH 44203"
             }
         ],
         "guardians": [
             {
-                "firstName": "Jessica",
-                "lastName": "Taylor",
-                "phoneNumber": "233-583-6734",
-                "address": "229 Walnut Avenue, Victoria, TX 77904"
-            },
-            {
-                "firstName": "Roger",
-                "lastName": "Rich",
-                "phoneNumber": "703-122-4458",
-                "address": "291 Lake View Drive, Greensburg, PA 15601"
+                "firstName": "Levaeh",
+                "lastName": "Davis",
+                "phoneNumber": "771-912-4521",
+                "address": "91 Elizabeth Street, Barberton, OH 44203"
             }
         ],
         "medical": {

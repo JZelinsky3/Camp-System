@@ -10,13 +10,7 @@ public class Director extends User{
         counselorNames = new ArrayList<>();
     }
 
-    public boolean verifyCounselor(User counselor) {
-        if(counselor.calculateAge() >= 18) {
-            return true;
-        }
-        return false;
-    }
-
+    //gives the director power to expell a camper
     public void giveExpulsion(Camper camper, String reason) {
         for (int i = 0; i < campers.size(); i++) {
             if(campers.get(i) == camper) {
@@ -33,5 +27,13 @@ public class Director extends User{
             }
 		}
         return print;
+    }
+
+    //makes sure all counselors are 18 or older
+    public boolean verifyCounselor(User counselor) {
+        if(counselor.calculateAge() >= 18) {
+            return true;
+        }
+        return false;
     }
 }

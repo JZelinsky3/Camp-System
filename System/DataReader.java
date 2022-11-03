@@ -392,8 +392,7 @@ public class DataReader extends DataConstants {
         Contact doc = new Contact(
             (String) physician.get(FIRST_NAME), 
             (String) physician.get(LAST_NAME), 
-            (String) physician.get(PHONE_NUMBER),
-            (String) physician.get(ADDRESS));
+            (String) physician.get(PHONE_NUMBER));
 
         ArrayList<String> newAllergies = new ArrayList<>();
         JSONArray allergies = (JSONArray) medical.get(ALLERGIES);
@@ -429,8 +428,7 @@ public class DataReader extends DataConstants {
             Contact newContact = new Contact(
                 (String) contact.get(FIRST_NAME), 
                 (String) contact.get(LAST_NAME), 
-                (String) contact.get(PHONE_NUMBER),
-                (String) contact.get(RELATIONSHIP));
+                (String) contact.get(PHONE_NUMBER));
 
             contactsList.add(newContact);
         }

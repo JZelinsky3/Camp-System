@@ -44,7 +44,7 @@ public class CampUI {
                 choice = getUserCommand(8);
             }else if(accountType == Type.DIRECTOR){
                 directorMenu();
-                choice = getUserCommand(6);
+                choice = getUserCommand(8);
             }
                 
             switch(choice){
@@ -92,22 +92,22 @@ public class CampUI {
 
     //user's menu
     private void userMenu(){
-        System.out.println("\nWelcome! How can we help? \n(1) add a new Camper \n(2) sign camper up for session \n(3) Camp Description \n(4) Logout");
+        System.out.println("\nWelcome! How can we help? \n(1) Add a new Camper \n(2) Sign camper up for session \n(3) Camp Description \n(4) Logout");
     }
 
     //counselor's menu
     private void counselorMenu(){
-        System.out.println("(6) display directory for cabin");
-        System.out.println("(7) display weeks info");
-        System.out.println("(8) display Schedule");
+        System.out.println("(6) Return directory for cabin");
+        System.out.println("(7) Return weeks info");
+        System.out.println("(8) Return Schedule");
     }
 
     //director's menu
     private void directorMenu(){
         System.out.println("(5) Expell a Camper");
-        System.out.println("(6) create new Camp");
-        System.out.println("(7) display weeks info");
-        System.out.println("(8) display Schedule");
+        System.out.println("(6) Create new Camp");
+        System.out.println("(7) Return weeks info");
+        System.out.println("(8) Return Camp Schedule");
     }
 
     private int getUserCommand(int commands){
@@ -157,7 +157,8 @@ public class CampUI {
                 String bio = scanner.nextLine();
                 Medical medical = getMedical();
                 systemFac.createCounselorAccount(username, password, email, lastName, firstName, phoneNumber, birthday, address, bio, medical);
-            }else{
+            }
+            else{
                 systemFac.createUserAccount(username, password, email, lastName, firstName, phoneNumber, birthday, address);
             }
             break;
@@ -261,8 +262,7 @@ public class CampUI {
         System.out.print("Enter phone number: ");
         String phoneNumber = scanner.nextLine();
         System.out.print("Enter Relationship: ");
-        String relationship = scanner.nextLine();
-        contact = new Contact(firstName, lastName, phoneNumber, relationship);
+        contact = new Contact(firstName, lastName, phoneNumber);
         
         return contact;
     }
@@ -367,14 +367,14 @@ public class CampUI {
 
     private void printWeekInfo(){
         System.out.println(systemFac.listSessions());
-        System.out.println("");
+        System.out.println("The information for which session do you want printed? Enter session number: ");
         int sessionNum = scanner.nextInt();
         systemFac.printWeekInfo(sessionNum);
     }
 
     private void printSchedule(){
         System.out.println(systemFac.listSessions());
-        System.out.println("");
+        System.out.println("The schedule for which session do you want printed? Enter session number: ");
         int sessionNum = scanner.nextInt();
         systemFac.printSchedule(sessionNum);
     }

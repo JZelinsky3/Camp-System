@@ -198,7 +198,7 @@ public class SystemFACADE {
     public void printRoster(int sessionNum){
         Session session = sessions.getSessions().get(sessionNum - 1);
         Cabin toPrint = findCounselorsCabin(session);
-        File rosterFile = new File("System/txt/camperdirectory.txt");
+        File rosterFile = new File("System/txt/directory.txt");
         try{
             rosterFile.createNewFile();
             writer = new FileWriter(rosterFile);
@@ -232,9 +232,9 @@ public class SystemFACADE {
                 }
                 writer.write("  -> EMERGENCY CONTACTS: ");
                 for(Contact emergency : c.getEmergencyContacts()){
-                    writer.write("      - " + emergency.getFirstName() + " " + emergency.getLastName() + ", " + emergency.getPhoneNumber() + ", " + emergency.getRelationship());
+                    writer.write("      - " + emergency.getFirstName() + " " + emergency.getLastName() + ", " + emergency.getPhoneNumber() + ", " );
                 }
-                writer.write("  -> MEDICAL INFORMATION: ");
+                writer.write("  -> PHYSICIAN INFORMATION: ");
                 Contact doc = c.getMedical().getPhysician();
                 writer.write("      - : " + doc.getFirstName() + " " + doc.getLastName() + ", " + doc.getPhoneNumber());
                 writer.write("      - TREATMENTS: ");
@@ -251,7 +251,7 @@ public class SystemFACADE {
     public void printSchedule(int sessionNum){
         Session session = sessions.getSessions().get(sessionNum - 1);
         Cabin toPrint = findCounselorsCabin(session);
-        File scheduleFile = new File("System/txt/schedule.txt");
+        File scheduleFile = new File("System/txt/sched.txt");
         try{
             scheduleFile.createNewFile();
             writer = new FileWriter(scheduleFile);
