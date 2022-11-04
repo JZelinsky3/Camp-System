@@ -125,14 +125,14 @@ public class SystemFACADE {
     public void logout(){
         users.saveUsers();
         campers.saveCampers();
-        sessions.saveSessions();
         counselors.saveCounselors();
         cabins.saveCabins();
+        sessions.saveSessions();
         
         currentUser = null;
     }
 
-    public boolean checkUsernameAvailability(String username){
+    public boolean checkUsernameOpen(String username){
         if(!users.getUsers().isEmpty()){
             for(User user : users.getUsers()){
                 if(user.getUserName().equals(username)){

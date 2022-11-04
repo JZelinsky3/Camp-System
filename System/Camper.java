@@ -12,8 +12,6 @@ public class Camper
     private String firstName;
     private String lastName;
     private LocalDate birthday;
-    private ArrayList<Address> address;
-    private ArrayList<Gender> gender;
     private ArrayList<Contact> emergencyContacts;
     private ArrayList<Contact> guardians;
     private Medical medical;

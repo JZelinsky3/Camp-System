@@ -5,7 +5,6 @@ import java.util.UUID;
 //Stores data on a counselor
 public class Counselor extends User{
     private ArrayList<Cabin> cabins;
-    private ArrayList<Session> sessions;
     private String bio;
     private Medical medical;
 

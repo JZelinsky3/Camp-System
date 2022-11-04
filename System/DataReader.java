@@ -19,7 +19,7 @@ public class DataReader extends DataConstants {
     private static ArrayList<Cabin> cabins;
 
     public static void main(String[] args) {
-        ArrayList<Session> us = getAllSessions();;
+        ArrayList<Session> us = getAllSessions();
         for (Session user : us) {
             System.out.println(user);
             System.out.println(user.getTheme());

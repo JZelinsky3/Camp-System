@@ -38,13 +38,13 @@ public class CampUI {
         while(!stop){
             if(accountType == Type.PARENT){
                 userMenu();
-                choice = getUserCommand(4);
+                choice = getUserCommand(5);
             }else if(accountType == Type.COUNSELOR){
                 counselorMenu();
-                choice = getUserCommand(8);
+                choice = getUserCommand(9);
             }else if(accountType == Type.DIRECTOR){
                 directorMenu();
-                choice = getUserCommand(8);
+                choice = getUserCommand(9);
             }
                 
             switch(choice){
@@ -58,23 +58,27 @@ public class CampUI {
                     printCampDescription();
                     break;
                 case 4:
-                    logout();
+                    printCampContactInfo();
                     stop = true;
                     break;
                 case 5:
-                    giveExpulsion();
+                    logout();
+                    stop = true;
                     break;
                 case 6:
+                    giveExpulsion();
+                    break;
+                case 7:
                     if(accountType == Type.DIRECTOR){
                         createCamp();
                     }else{
-                        printRoster();
+                        printDirectory();
                     }
                     break;
-                case 7:
+                case 8:
                     printWeekInfo();
                     break;
-                case 8:
+                case 9:
                     printSchedule();
                     break;
                 default:
@@ -92,22 +96,27 @@ public class CampUI {
 
     //user's menu
     private void userMenu(){
-        System.out.println("\nWelcome! How can we help? \n(1) Add a new Camper \n(2) Sign camper up for session \n(3) Camp Description \n(4) Logout");
+        System.out.println("\nWelcome to the Camp Congaree website! What can we for you?");
+        System.out.println("(1) Add a new Camper");
+        System.out.println("(2) Sign camper up for session");
+        System.out.println("(3) Camp Description");
+        System.out.println("(4) Camp Contact Info");
+        System.out.println("(5) Logout");
     }
 
     //counselor's menu
     private void counselorMenu(){
-        System.out.println("(6) Return directory for cabin");
-        System.out.println("(7) Return weeks info");
-        System.out.println("(8) Return Schedule");
+        System.out.println("(7) Return directory for cabin");
+        System.out.println("(8) Return weeks info");
+        System.out.println("(9) Return Schedule");
     }
 
     //director's menu
     private void directorMenu(){
-        System.out.println("(5) Expell a Camper");
-        System.out.println("(6) Create new Camp");
-        System.out.println("(7) Return weeks info");
-        System.out.println("(8) Return Camp Schedule");
+        System.out.println("(6) Expell a Camper");
+        System.out.println("(7) Create new Camp");
+        System.out.println("(8) Return weeks info");
+        System.out.println("(9) Return Camp Schedule");
     }
 
     private int getUserCommand(int commands){
@@ -127,15 +136,15 @@ public class CampUI {
             if(accountType.equalsIgnoreCase("x")){
                 break;
             }
-            System.out.print("Enter your first name: ");
+            System.out.print("Enter first name: ");
             String firstName = scanner.nextLine();
-            System.out.print("Enter your last name: ");
+            System.out.print("Enter last name: ");
             String lastName = scanner.nextLine();
             String username;
             while(true){
                 System.out.print("Enter a username: ");
                 username = scanner.nextLine();
-                if(!systemFac.checkUsernameAvailability(username)){
+                if(!systemFac.checkUsernameOpen(username)){
                     System.out.println("Username already has been taken. Retry.");
                     continue;
                 }
@@ -143,17 +152,17 @@ public class CampUI {
             }
             System.out.print("Enter a password: ");
             String password = scanner.nextLine();
-            System.out.print("Enter your email address: ");
+            System.out.print("Enter email address: ");
             String email = scanner.nextLine();
-            System.out.print("Enter your phone number: ");
+            System.out.print("Enter phone number: ");
             String phoneNumber = scanner.nextLine();
-            System.out.print("Enter your birthday (format: yyyy-mm-dd): ");
+            System.out.print("Enter birthday (format: yyyy-mm-dd): ");
             String birthdayString = scanner.nextLine();
             LocalDate birthday = LocalDate.parse(birthdayString);
-            System.out.print("Enter your address: ");
+            System.out.print("Enter address: ");
             String address = scanner.nextLine();
             if(accountType.equalsIgnoreCase("c")){
-                System.out.println("Enter a short bio: ");
+                System.out.println("Enter short bio: ");
                 String bio = scanner.nextLine();
                 Medical medical = getMedical();
                 systemFac.createCounselorAccount(username, password, email, lastName, firstName, phoneNumber, birthday, address, bio, medical);
@@ -267,7 +276,7 @@ public class CampUI {
         return contact;
     }
 
-    //general description of the camp
+    // description of the camp
     private void printCampDescription(){
         String information = systemFac.getUserInfo();
         System.out.println(information);
@@ -277,9 +286,13 @@ public class CampUI {
             System.out.println(" - " + s.getStartDate() + " - " + s.getEndDate() + ", Theme: " + s.getTheme());
         }
         System.out.println("> The address of the camp is: 100 National Park Rd, Hopkins, SC 29061 ");
+        System.out.println("> Camp Congaree is located next door to Congaree National Park. Includes hiking trails, rivers, and lots more!");
+        System.out.println("> Explore the wildout doors here at Camp Congaree!");
+    }
+
+    private void printCampContactInfo(){
         System.out.println("> The camps phone number is \"887-549-7361\"");
         System.out.println("> The camps email is \"campcongaree@gmail.com \".");
-        System.out.println("> Camp Congaree is located next door to Congaree National Park. Includes hiking trails, rivers, and lots more!");
     }
    
     //sign camper up for a session
@@ -357,10 +370,11 @@ public class CampUI {
             systemFac.addCabinToSessions(newCabin);
         }
     }
+
     //print all the people in one session
-    private void printRoster(){
+    private void printDirectory(){
         System.out.println(systemFac.listSessions());
-        System.out.println("");
+        System.out.println("Enter session number for directory you wish to be printed: ");
         int sessionNumber = scanner.nextInt();
         systemFac.printRoster(sessionNumber);
     }
@@ -379,7 +393,6 @@ public class CampUI {
         systemFac.printSchedule(sessionNumber);
     }
     
-
     //logs user out of the system
     private void logout(){
         System.out.println("Goodbye!");
