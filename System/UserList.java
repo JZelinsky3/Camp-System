@@ -62,5 +62,8 @@ public class UserList {
     //Saves the UserList.
     public void saveUsers() {
         DataWriter.saveUsers();
+    }
+
+    public void setUsers(ArrayList<User> users2) {
     }    
 }

@@ -104,7 +104,7 @@ public class SystemFACADE {
 
     public Camper findCamper(String firstName, String lastName){
         Camper camper = null;
-        for(Camper c : currentUser.campers){
+        for(Camper c : campers.getCampers()){
             if(c.getFirstName().equalsIgnoreCase(firstName) && c.getLastName().equalsIgnoreCase(lastName)){
                 camper = c;
             }
@@ -274,5 +274,8 @@ public class SystemFACADE {
             }
         }
         return null;
+    }
+
+    public void setCurrentUser(Object object) {
     }
 }

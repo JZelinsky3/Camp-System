@@ -1,9 +1,12 @@
-package System;
+package System.test;
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import System.Activity;
+import System.Schedule;
 
 public class ScheduleTest {
     public Schedule schedule;
