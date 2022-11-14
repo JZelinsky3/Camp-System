@@ -11,7 +11,7 @@ public class ScheduleTest {
 
     @BeforeEach
     public void setup(){
-        //activities.add(0, "Swimming");
+        //activities.add(0, "Tubing");
         schedule = new Schedule(activities);
     }
     @AfterEach
@@ -22,7 +22,7 @@ public class ScheduleTest {
     @Test
     public void testHasActivity()
     {
-        schedule.addActivity(new Activity("Swimming","Pool"));
+        schedule.addActivity(new Activity("Tubing","River"));
         activities = schedule.getActivities();
         if(activities !=null){
             assert(true);
