@@ -18,14 +18,6 @@ public class DataReader extends DataConstants {
     private static ArrayList<Session> sessions;
     private static ArrayList<Cabin> cabins;
 
-    public static void main(String[] args) {
-        ArrayList<Session> us = getAllSessions();
-        for (Session user : us) {
-            System.out.println(user);
-            System.out.println(user.getTheme());
-        }
-    }
-
     public static ArrayList<User> getAllUsers() {
         users = new ArrayList<>();
 
@@ -292,17 +284,14 @@ public class DataReader extends DataConstants {
         for (int i=0; i<JSONcabins.size(); i++) {
 
             UUID cabinID = UUID.fromString((String) JSONcabins.get(i));
-            
             Cabin newCabin = getCabinByUUID(cabinID);
 
             if (newCabin != null)
                 newCabins.add(newCabin);
-            
         }
 
         return newCabins;
     }
-
 
     private static Session getSessionByUUID(UUID id) {
         for (Session session : sessions) {
